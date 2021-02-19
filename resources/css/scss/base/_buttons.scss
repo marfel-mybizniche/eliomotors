@@ -1,0 +1,247 @@
+
+/* Buttons */
+.button{
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-rajdhani;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    min-width: 210px;
+    color: $color-light;
+    transition: all 1s ease;
+
+    &:hover, &:focus, &:active {
+        color: $color-white;
+        background-color: linear-gradient(114deg, $color-primary 7%, $color-success 95%);
+    }
+
+    .icon.white {
+        filter: sepia(0) saturate(0) hue-rotate(0) brightness(200%) contrast(100%);
+    }
+
+
+    &.disabled, &[disable] {
+        opacity: 1 !important;
+        background: $color-white !important;
+        color: $color-light !important;
+        border:1px solid $color-light !important;
+
+        * {
+            color: $color-light !important;
+        }
+        [class*="circle"] {
+            background: $color-light !important;
+            color: $color-white !important;
+        }
+    }
+     
+        
+    &.hollow {
+        background: none;
+        color: $color-white;
+        border-color: $color-primary;
+
+        &:hover {
+            background: $color-primary;
+            border-color: $color-primary;
+            color: $color-white;
+            background: linear-gradient(to bottom, $color-success, $color-primary);
+    
+            .icon {
+                filter: sepia(0) saturate(0) hue-rotate(0) brightness(200%) contrast(100%);
+            }
+        }
+
+        &:focus {
+            color: $color-white;
+        }
+    }
+
+    &.primary {
+        color: $color-white;
+
+        &:hover {
+            color: $color-white;
+            background: linear-gradient(114deg, $color-primary 7%, $color-success 95%);
+        }
+        &:focus {
+            color: $color-white;
+        }
+        
+        &.hollow {
+            background: none;
+            color: $color-primary;
+            border-color: $color-primary;
+    
+            &:hover {
+                background: $color-primary;
+                border-color: $color-primary;
+                color: $color-white;
+            }
+        }
+        
+        &.skew {
+            position: relative;
+            background: none;
+            padding-right: 80px;
+
+            &:before {
+                content: "";
+                background-image: linear-gradient(to bottom, $color-primary, $color-primary);
+                position: absolute;
+                left: 0;
+                top:0;
+                height: 100%;
+                width: 100%;
+                transform: skew(-15deg);
+                z-index: -1;
+                border-right: 25px solid $color-success;
+                transition: background-image 0.5s ease;
+            }
+            &:after {
+                content: "";
+                background-image: linear-gradient(to bottom, $color-success, $color-primary);
+                position: absolute;
+                right: 24px;
+                top:0;
+                height: 100%;
+                width: 25px;
+                transform: skew(-15deg);
+                z-index: -1;
+            }
+
+            &:hover {
+                background: none;
+
+                &:before {
+                    background-image: linear-gradient(114deg, $color-primary 7%, $color-success 95%);
+                }
+            }
+        }
+    }
+
+    
+    &.small {   
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    &.large {   
+        padding: 23px 60px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    &.xlarge {   
+        font-size: 30px;
+        line-height: 50px;
+        letter-spacing: 2.4px;
+        padding: 30px 100px;
+
+        &.skew {
+            padding-right: 130px;
+        }
+
+        @media(max-width:649px) {
+            font-size: 16px;
+            padding: 15px 40px;
+            line-height: 30px;
+            
+            &.skew {
+                padding-right: 60px;
+            }
+
+            .icon.large {
+                width: 24px;
+                height: 24px;
+                background-size: 24px;
+            }
+        }
+    }
+
+
+    &.nomin {
+        min-width: 1px;
+    }
+
+    
+
+    .buttons & {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .action & {
+        margin-bottom: 0;
+    }
+
+    @include media(max-width, 480px) {
+        padding: 10px 20px;
+    }
+    
+} 
+
+.btn-play {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 20px;
+    min-width: 90px;
+    min-height: 90px;
+    font-size: 0;
+    
+    &:before {
+        font-family: "apt-icons";
+        content: "";
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 50%;
+        transition:all 0.3s ease;
+        background: $color-white url(../img/icon/play.svg) no-repeat center center;
+        color: $color-white;
+        font-size: 40px;
+    }
+    &:hover:before {
+        width: 110px;
+        height: 110px;
+        line-height: 110px;
+    }
+
+    &.primary:before {
+        background: $color-primary;
+    }
+    
+    &.small {
+        min-width: 45px;
+        min-height: 45px;
+
+        &:before {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 25px;
+
+        }  
+
+        &:hover {
+            &:before {
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+            }
+        }
+
+    }
+
+}

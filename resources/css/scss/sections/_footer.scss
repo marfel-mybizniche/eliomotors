@@ -1,0 +1,154 @@
+
+// Select Footer Style
+#footer {
+    background: $color-black;
+    font-size: 14px;
+    padding: 150px 0 35px;
+    border-bottom: 10px solid $color-primary;
+    color: $color-white;
+
+    .foot_hr {
+        border-color: $color-dark;
+        max-width: none;
+        margin: 0 0 60px;
+
+        @media (min-width:1600px) {
+            margin-left: -80px;
+            margin-right: -80px;
+        }
+
+        @media (min-width:1800px) {
+            margin-left: -170px;
+            margin-right: -170px;
+        }
+    }
+
+    .foot_menu {
+        ul {
+            li {
+                list-style: none;
+
+                a {
+                    color: #888888;
+                    text-transform: uppercase;
+                    font: 600 16px/1.4  $font-rajdhani;
+                    padding: 6px 0;
+                    display: inline-block;
+
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+ 
+            }
+
+            ul {
+                margin: 0 0 60px;
+                padding: 0;
+
+                li {
+                    a {
+                        color: $color-white;
+                        text-transform: none;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: #888888;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .foot_logo {
+        text-align: right;
+        margin: 0 0 30px;
+    }
+
+    .foot_btns {
+        justify-content: right;
+        margin: 0 0 30px;
+
+        .login {
+            min-width: 120px;
+        }
+    }
+
+    .foot_social {
+        text-align: right;
+        margin: 0 -10px;
+        padding: 0;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+
+    .foot_note {
+        font-size: 12px;
+        color: darken($color-white, 20%);
+
+        h5 {
+            font: 600 16px  $font-rajdhani;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    .copyright {
+        padding: 50px 0 0;
+    }
+
+    .designby {
+
+    }
+
+	@media(max-width: 1023px) {   
+        padding: 80px 0;
+
+        .foot_logo {
+            text-align: center;
+        }
+        .foot_btns {
+            text-align: center;
+            justify-content: center;
+        }
+        .foot_social {
+            text-align: center;
+        }
+
+        .foot_btns {
+            .button {
+                order:2;
+            }
+            .login {
+                order:1;
+            }
+        }
+
+        .copyright {
+            padding-bottom: 50px;
+        }
+    }   
+
+    
+	@media(max-width: 767px) {   
+        
+        .foot_menu {
+            ul {
+                ul {
+                    margin: 0 0 30px;
+                }
+            }
+        }
+
+    }
+ 
+}

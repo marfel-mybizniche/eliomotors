@@ -1,0 +1,25 @@
+/** === Custom Block Editor === */
+
+
+/* Main column width */
+.wp-block {
+  width: 95%;
+  max-width: 95%;
+}
+ 
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  width: 95%;
+  max-width: 95%;
+}
+ 
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  width: 95%;
+  max-width: 95%;
+}
+
+
+.components-placeholder {
+	min-height: 1px;
+}

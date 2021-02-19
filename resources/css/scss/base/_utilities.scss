@@ -1,0 +1,160 @@
+[data-aos] {
+	margin-bottom: -1px;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+//Text color
+.text-primary {
+    color:$color-primary
+}
+.text-secondary {
+    color:$color-secondary
+}
+.text-success {
+    color:$color-success
+}
+.text-alert {
+    color:$color-alert
+}
+.text-warning {
+    color:$color-warning
+}
+.text-dark {
+    color:$color-dark
+}
+.text-grey {
+    color:$color-grey
+}
+
+
+//Font Weights
+.fw-light {
+    font-weight: 300;
+}
+.fw-normal {
+    font-weight: 400;
+}
+.fw-bold {
+    font-weight: 700;
+}
+
+
+
+//Custom foundation 
+@include media(min-width, 1600px) {
+    .grid-x { 
+        > .xlarge-3 {
+            width: 25%;
+        }
+    }
+    
+    .grid-margin-x {
+        > .xlarge-3 {
+            width: calc(25% - 30px);
+        }
+    }
+}
+ 
+@include media(max-width, 1023px) {
+    .grid-container {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+ 
+@include media(max-width, 767px) {
+    .grid-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@include media(max-width, 375px) {
+    .grid-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+//Sticky Fixer for smooth scroll content
+.sticky-fixer {
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+// Slick Custom button
+.slick-slider {
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	.slick-arrow {
+		background: darken($color-white, 10%);
+		width: 30px;
+		height: 30px;
+		font-size: 0;
+		cursor: pointer;
+		border:0 !important;
+
+		position: absolute;
+		top:50%;
+		transform:translate(0, -50%);
+		border-radius: 50%;
+
+		&:before {
+			content: "";
+			border-color: transparent;
+			border-width: 5px 8px;
+			border-style: solid;
+		}
+	}
+	.slick-prev {
+		left:10px;
+
+		&:before {
+			border-right-color: $color-primary;
+			margin-right: 8px;
+		}
+	}
+	.slick-next {
+		right: 10px;
+
+		&:before {
+			border-left-color: $color-primary;
+			margin-left: 8px;
+		}
+	}
+}
+
+
+// Slick Custom dots
+.slick-dots {
+	margin:0;
+	padding:0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		margin:0 5px;
+
+		button {
+			font-size: 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: $color-black;
+			cursor: pointer;
+		}
+
+		&.slick-active {
+			button {
+				background: $color-primary;
+			}
+		}
+	}
+}
+

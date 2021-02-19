@@ -1,0 +1,17 @@
+//VARIABLES
+@import "./base/variables";
+@import "./base/mixins";
+
+@import "main";
+
+// SECTIONS -------
+@import "./sections/header";
+@import "./sections/content";
+@import "./sections/sidebar";
+@import "./sections/footer";
+
+
+// Custom CSS here
+
+@import "./pages/home";
+
