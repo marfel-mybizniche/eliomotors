@@ -90,10 +90,14 @@
 						<a class="button hollow login" href="#">Login</a>
 					</div>
 					<ul class="foot_social">
-						<li><a href="#"><img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/facebook.svg" alt=""></a></li>
-						<li><a href="#"><img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/twitter.svg" alt=""></a></li>
-						<li><a href="#"><img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/instagram.svg" alt=""></a></li>
-						<li><a href="#"><img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/pinterest.svg" alt=""></a></li>
+						<li><a href="https://www.facebook.com/ElioMotors" target="_blank">
+							<img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/facebook.svg" alt=""></a></li>
+						<li><a href="https://twitter.com/ElioMotors" target="_blank">
+							<img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/twitter.svg" alt=""></a></li>
+						<li><a href="https://instagram.com/eliomotors" target="_blank">
+							<img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/instagram.svg" alt=""></a></li>
+						<li><a href="https://www.youtube.com/user/eliomotors" target="_blank">
+							<img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/pinterest.svg" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
