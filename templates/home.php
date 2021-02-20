@@ -4,56 +4,54 @@
 
 get_header(); ?>
 
-
-<section class="sec_hero">
-    <div class="bg" data-aos="fade-down">
-        <!-- <img src="<?php echo MBN_ASSETS_URI; ?>/img/bg-hero.jpg" alt=""> -->
-        <video poster="<?php echo MBN_ASSETS_URI; ?>/img/bg-hero.jpg" autoplay loop muted playsinline>
-            <source src="<?php echo MBN_ASSETS_URI; ?>/video/Elio-Hero.mp4" type="video/mp4" />
-            <p>Your browser cannot support .mp4 file</p>
-        </video>
-    </div>
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell large-6 copy" data-aos="fade-left">
-                <h2><span>IT’s fun!</span> IT’S ELECTRIC!</h2>
-                <ul class="info">
-                    <li>
-                        <small>Top Speed</small>
-                        110 MPH
-                    </li>
-                    <li>
-                        <small>Per Charge</small>
-                        +3 Days Commuting
-                    </li>
-                    <li>
-                        <small>Warranty</small>
-                        3-Years / 36,000 miles
-                    </li>
-                    <li class="hide-for-medium">
-                        <small>Base Price</small>
-                        $ 14,900.00
-                    </li>
-                </ul>
-                <div class="note show-for-medium">+ Average commuter drives 52 miles/day.</div>
-                <div class="action">
-                    <a href="#" class="button hollow large">
-                        <i class="icon icn_bell"></i> Send Me updates
-                    </a>
-                    <span class="price show-for-medium">
-                        <small>Base Price</small>
-                        $ 14,900.00
-                    </span>
+   
+    <section class="sec_hero">
+        <div class="bg" data-aos="fade-down">
+            <!-- <img src="<?php echo MBN_ASSETS_URI; ?>/img/bg-hero.jpg" alt=""> -->
+            <video poster="<?php echo MBN_ASSETS_URI; ?>/img/bg-hero.jpg" autoplay loop muted playsinline>
+                <source src="<?php echo MBN_ASSETS_URI; ?>/video/Elio-Hero.mp4" type="video/mp4" />
+                <p>Your browser cannot support .mp4 file</p>
+            </video>
+        </div>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-6 copy" data-aos="fade-left">
+                    <h2><span>IT’s fun!</span> IT’S ELECTRIC!</h2>
+                    <ul class="info">
+                        <li>
+                            <small>Top Speed</small>
+                            110 MPH
+                        </li>
+                        <li>
+                            <small>Per Charge</small>
+                            +3 Days Commuting
+                        </li>
+                        <li>
+                            <small>Warranty</small>
+                            3-Years / 36,000 miles
+                        </li>
+                        <li class="hide-for-medium">
+                            <small>Base Price</small>
+                            $ 14,900.00
+                        </li>
+                    </ul>
+                    <div class="note show-for-medium">+ Average commuter drives 52 miles/day.</div>
+                    <div class="action">
+                        <a href="#" class="button hollow large">
+                            <i class="icon icn_bell"></i> Send Me updates
+                        </a>
+                        <span class="price show-for-medium">
+                            <small>Base Price</small>
+                            $ 14,900.00
+                        </span>
+                    </div>
+                </div>
+                <div class="cell large-6 image" data-aos="fade-down-left" data-aos-delay="150">
+                    <figure class="img1"><img src="<?php echo MBN_ASSETS_URI; ?>/img/hero-car.png" alt=""></figure>
                 </div>
             </div>
-            <div class="cell large-6 image" data-aos="fade-down-left" data-aos-delay="150">
-                <figure class="img1"><img src="<?php echo MBN_ASSETS_URI; ?>/img/hero-car.png" alt=""></figure>
-            </div>
         </div>
-    </div>
-</section>
-
-<main id="content">
+    </section>
 
     <section class="sec_intro">
         <div class="grid-container">
@@ -222,12 +220,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
-
-
- 
-</main>
-
 
 
 <?php get_footer() ?>

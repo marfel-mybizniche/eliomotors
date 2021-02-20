@@ -1,5 +1,8 @@
 <?php
 
+//MBN Login
+include_once("mbn-login/setup.php");
+
 define('MBN_DIR_URI', get_template_directory_uri());
 define('MBN_DIR_PATH', get_template_directory());
 define('MBN_ASSETS_URI', MBN_DIR_URI.'/resources');

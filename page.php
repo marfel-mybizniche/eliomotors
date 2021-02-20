@@ -10,6 +10,6 @@
 		endwhile; // End of the loop.
 		?>
 	</div>	
-</section>
+</section> 
 
 <?php get_footer() ?>
