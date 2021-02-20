@@ -198,7 +198,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sec_newsletter" data-aos="fade-up" data-aos-offset="400">
+    <section class="sec_newsletter" data-aos="fade-up" data-aos-offset="300">
         <div class="bg">
             <img src="<?php echo MBN_ASSETS_URI; ?>/img/img-video-placeholder.jpg" alt="">
         </div>

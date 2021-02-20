@@ -29,7 +29,7 @@
                 list-style: none;
 
                 a {
-                    color: #888888;
+                    color: darken($color-white, 46.5%); //#888;
                     text-transform: uppercase;
                     font: 600 16px/1.4  $font-rajdhani;
                     padding: 6px 0;
@@ -53,7 +53,7 @@
                         font-size: 14px;
 
                         &:hover {
-                            color: #888888;
+                            color: darken($color-white, 46.5%); //#888;
                         }
                     }
                 }
@@ -89,12 +89,13 @@
 
     .foot_note {
         font-size: 12px;
-        color: darken($color-white, 20%);
+        color: darken($color-white, 46.5%); //#888;
 
         h5 {
             font: 600 16px  $font-rajdhani;
             text-transform: uppercase;
             margin-bottom: 5px;
+            color: $color-light;
         }
 
         p {
@@ -104,6 +105,7 @@
 
     .copyright {
         padding: 50px 0 0;
+        color: darken($color-white, 19%);
     }
 
     .designby {
