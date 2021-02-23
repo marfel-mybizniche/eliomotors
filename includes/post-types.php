@@ -1,5 +1,25 @@
 <?php
 
+// Register testimonials Post Type
+function testimonials_post() {
+    register_post_type( 'testimonial',
+        array(
+            'labels'    => array(
+                'name' => __( 'Testimonials' ),
+                'singular_name' => __('Testimonial')
+            ),
+            'public'        => true,
+            'has_archive'   => true,
+            'show_in_rest'  => true,
+            'menu_position' => 20,
+            'with_front' => true,
+            'supports'      =>  array('title', 'page-attributes'),
+            'menu_icon'     => 'dashicons-editor-paragraph',
+        )
+    );
+}
+add_action( 'init', 'testimonials_post' ); 
+
 
 // Register courses Post Type
 function courses_post() {

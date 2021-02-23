@@ -114,6 +114,7 @@ get_header(); ?>
             <div class="grid-x">
                 <div class="cell medium-10 large-10 xlarge-10">
                     <ul class="review_slider" data-aos="fade-up" data-aos-offset="300">
+
                         <li>
                             <blockquote class="quote">
                                 <p>Elio is completely exhilarating… like no other driving experience.</p>
@@ -126,6 +127,24 @@ get_header(); ?>
                                 <cite>Joe Smith <small>Car And Driver Magazine</small></cite>
                             </blockquote>
                         </li>
+
+                    <?php                 
+                        $tisteArgs = array(
+                            'posts_per_page' => -1,
+                            'post_type' => 'testimonial',
+                        );
+                        $testiPost = new WP_Query( $tisteArgs );
+
+                        while ( $testiPost->have_posts() ) { $testiPost->the_post(); ?>
+                            
+                        <li>
+                            <blockquote class="quote">
+                                <p><?php the_field('testi_content'); ?></p>
+                                <cite><?php the_title(); ?> <small><?php the_field('testi_subtitle'); ?></small></cite>
+                            </blockquote>
+                        </li>
+                                    
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="cell medium-2 large-2 xlarge-2 image show-for-medium">
