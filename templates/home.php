@@ -115,19 +115,6 @@ get_header(); ?>
                 <div class="cell medium-10 large-10 xlarge-10">
                     <ul class="review_slider" data-aos="fade-up" data-aos-offset="300">
 
-                        <li>
-                            <blockquote class="quote">
-                                <p>Elio is completely exhilarating… like no other driving experience.</p>
-                                <cite>Joe Smith <small>Car And Driver Magazine</small></cite>
-                            </blockquote>
-                        </li>
-                        <li>
-                            <blockquote class="quote">
-                                <p>Elio is completely exhilarating… like no other driving experience.</p>
-                                <cite>Joe Smith <small>Car And Driver Magazine</small></cite>
-                            </blockquote>
-                        </li>
-
                     <?php                 
                         $tisteArgs = array(
                             'posts_per_page' => -1,
