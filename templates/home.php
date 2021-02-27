@@ -125,7 +125,7 @@ get_header(); ?>
                         while ( $testiPost->have_posts() ) { $testiPost->the_post(); ?>
                             
                         <li>
-                            <blockquote class="quote">
+                            <blockquote class="quote large">
                                 <p><?php the_field('testi_content'); ?></p>
                                 <cite><?php the_title(); ?> <small><?php the_field('testi_subtitle'); ?></small></cite>
                             </blockquote>

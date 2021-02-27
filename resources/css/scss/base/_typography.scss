@@ -11,7 +11,7 @@ body{
     font-family: $body-font-family;
     font-size: $body-font-size;
     color: $color-dark;
-    // font-weight: 300;
+    font-weight: 300;
     overflow-x: hidden;
 }
 
@@ -27,59 +27,44 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-weight: bold;
+    font-weight: 300;
     font-family: $heading-font-family;
     line-height:1.1;
     margin-bottom: 15px;
 }
-h4, h5, h6{
-    font-family: $body-font-family;
+h6 {
+    font-weight: 400;
 }
 
 h1{
-    font-size: 47px;
+    font-size: 88px;
     line-height: 1;
 }
 h2{
-    font-size: 35px;
+    font-size: 56px;
 }
 h3{
-    font-size:24px;
+    font-size:40px;
 }
 h4{
-    font-size:18px;
+    font-size:32px;
 }
 h5{
-    font-size:16px;
+    font-size:40px;
+    font-family: $font-chantal;
+    font-style: italic;
+    color: $color-primary;
 }
 h6{
-    font-size:12px;
+    font-size:20px;
 }
 
 @media (max-width: 1280px){
     h1{
-        font-size: 40px;
+        font-size: 64px;
     }
     h2{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 24px;
-    }
-    h4{
-        font-size: 20px;
-    }
-    h5{
-        font-size: 16px;
-    }
-    h6{
-        font-size: 12px;
-    }
-
-}
-@media (max-width: 1023px){
-    body{
-        font-size: $body-font-size * 0.9;
+        font-size: 48px;
     }
 
 }
@@ -87,20 +72,23 @@ h6{
 
 @media (max-width: 639px){
     body{
-        font-size: $body-font-size * 0.8;
+        font-size: 14px;
     }
 
     h1{
-        font-size: 32px;
+        font-size: 40px;
     }
     h2{
-        font-size: 26px;
+        font-size: 32px;
     }
     h3{
-        font-size:22px;
+        font-size:28px;
     }
     h4{
-        font-size:18px;
+        font-size:24px;
+    }
+    h5 {
+        font-size: 32px;
     }
 }
 
@@ -178,7 +166,7 @@ blockquote {
     border-left-width: 0;
     border-color: $color-primary;
     color: $color-dark;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 300;
     font-style: italic;
     line-height: 1.2;
@@ -188,8 +176,8 @@ blockquote {
 
     &:before {
         content: "";
-        width: 115px;
-        height: 125px;
+        width: 95px;
+        height: 105px;
         position: absolute;
         left: 20px;
         top:0;
@@ -226,16 +214,42 @@ blockquote {
     }
 
     &.small {
-        font-size: 48px;
+        font-size: 20px;
+        padding: 20px 0 0 120px;
+
+        &:before {
+            content: "";
+            width: 65px;
+            height: 75px;
+            background-size: 32px;
+        }
+
+        p {
+            line-height: 1.4;
+        }
+    }
+
+    &.large {
+        font-size: 64px;
+
+        &:before {
+            content: "";
+            width: 115px;
+            height: 125px;
+        }
     }
 
     @media (max-width: 1366px) {
-        font-size: 46px;
+        font-size: 32px;
+
+        &.large {
+            font-size: 46px;
+        }
     }
 
     @media (max-width: 1023px) {
         padding: 90px 0 0;
-        font-size: 42px;
+        font-size: 28px;
 
         &:before {
             content: "";
@@ -243,10 +257,22 @@ blockquote {
             height: 70px;
             background-size: 38px;
         }
+        
+        &.large {
+            font-size: 42px;
+        }
     }
 
     @media (max-width: 767px) {
-        font-size: 32px;
+        font-size: 22px;
+        
+        &.small {
+            font-size: 18px;
+        }
+
+        &.large {
+            font-size: 32px;
+        }
     }
 }
 

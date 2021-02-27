@@ -16,6 +16,11 @@
 			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
 		}
 	}
+
+	+ * {
+		margin-top: 80px;
+	}
+
 	.hsnav {
 		max-width: none !important;
 		border-bottom: 1px solid rgba($color-light, .25);
@@ -40,6 +45,7 @@
 			position: relative;
 			min-height: 80px;
 			padding: 0 30px;
+			background: $color-dark;
 
 			.navlogo {
 				float: left;

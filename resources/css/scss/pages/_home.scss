@@ -1,4 +1,16 @@
 
+body.home {
+	#header {
+		+ * {
+			margin-top: 0;
+		}
+
+		.hsnav .navbar {
+			background: none;
+		}
+	}
+}
+
 .sec_hero {
 	position: relative;
 	padding: 160px 0;
@@ -446,6 +458,9 @@
 	h6 {
 		text-transform: uppercase;
 		letter-spacing: 1px;
+		font-size: 12px;
+		font-weight: bold;
+
 	}
 	
 	ul.feat_logos {
@@ -510,6 +525,7 @@
 
 			li {
 				font-size: 32px;
+				font-weight: 400;
 				list-style: none;
 				margin-bottom: 40px;
 
