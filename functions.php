@@ -159,3 +159,20 @@ require MBN_DIR_PATH.'/includes/shortcodes.php';
 require MBN_DIR_PATH.'/includes/public-hooks.php';
 require MBN_DIR_PATH.'/includes/admin-hooks.php';
 
+
+add_action('acf/init', 'my_acf_blocks_init');
+function my_acf_blocks_init() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // Register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'pagebanner',
+            'title'             => __('Banner'),
+            'description'       => __('Add custom banner'),
+            'render_template'   => 'blocks/acf-blocks.php',
+            'category'          => 'formatting',
+        ));
+    }
+}

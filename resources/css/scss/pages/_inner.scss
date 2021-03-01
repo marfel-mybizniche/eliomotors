@@ -21,12 +21,20 @@
             }
         }
     }
+
+    + .page_content {
+        padding-top: 0;
+    }
 }
 
 
 
 // Page Content
 //==================================
+.page_content {
+    position: relative;
+    padding: 150px 0;
+}
 
 .sec_why_elio {
     position: relative;
