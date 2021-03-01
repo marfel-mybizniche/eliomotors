@@ -35,14 +35,10 @@ $bannerDescription = get_field('banner_description') ?: 'Description / Caption';
 		<div class="grid-container">
 			<div class="grid-x grid-margin-x align-center">
 				<div class="cell large-9">
-                    <?php if(get_field('banner_subtitle') != '') { ?>
-					<h5><?= get_field('banner_subtitle') ?></h5>
-                    <?php } ?>
-                    <?php if(get_field('banner_title') != '') { ?>
-					<h2><?= get_field('banner_title') ?></h2>
-                    <?php } ?>
-                    <?php if(get_field('banner_description') != '') { ?>
-					<p><?= get_field('banner_description') ?></p>
+					<h5><?= $bannerSubtitle; ?></h5>
+					<h2><?= $bannerTitle; ?></h2>
+                    <?php if($bannerDescription) != 'Description / Caption') { ?>
+					<p><?= $bannerDescription; ?></p>
                     <?php } ?>
 				</div>
 			</div>
