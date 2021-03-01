@@ -76,21 +76,21 @@
 }
  
 @include media(max-width, 1023px) {
-    .grid-container {
+    .grid-container, .wp-block-group__inner-container {
         padding-left: 75px;
         padding-right: 75px;
     }
 }
  
 @include media(max-width, 767px) {
-    .grid-container {
+    .grid-container, .wp-block-group__inner-container {
         padding-left: 30px;
         padding-right: 30px;
     }
 }
 
 @include media(max-width, 375px) {
-    .grid-container {
+    .grid-container, .wp-block-group__inner-container {
         padding-left: 20px;
         padding-right: 20px;
     }

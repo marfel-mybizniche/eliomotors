@@ -23,3 +23,63 @@
 .components-placeholder {
 	min-height: 1px;
 }
+
+
+/* Custom editor */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: #222;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+a {
+  color: #3c9548;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+a:hover, a:focus {
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 88px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 40px;
+  font-family: "Chantal", sans-serif;
+  font-style: italic;
+  color: #3c9548;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+}
