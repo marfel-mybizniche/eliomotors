@@ -1,0 +1,100 @@
+<?php
+
+/* Template Name: Features template */
+
+get_header(); ?>
+
+   
+    <section class="sec_banner">
+        <div class="banner_copy">
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x align-center">
+                    <div class="cell large-9">
+                        <h5>It’s Electric</h5>
+                        <h2>The 3 Must Haves</h2>
+                        <p>Before we even put pen to paper to build the ultimate electric commuter vehicle, these three Elio “Must-haves” were etched indelibly in our minds and hearts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_images">
+            <ul>
+                <li><img src="<?php echo MBN_ASSETS_URI; ?>/img/about-1a.jpg" alt=""></li>
+                <li><img src="<?php echo MBN_ASSETS_URI; ?>/img/about-1b.jpg" alt=""></li>
+                <li><img src="<?php echo MBN_ASSETS_URI; ?>/img/about-1a.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="set_feat_detail">
+        <div class="grid-container">
+            <h2 class="text-center">The Details</h2>
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-6">
+                    <h6>Technical Features include:</h6>
+                    <ul class="square-list">
+                        <li>150 Mile Range</li>
+                        <li>Elio Safety Management System that includes three airbags, unibody frame, Anti-Lock Braking System, and Electronic Stability Control</li>
+                        <li>Front Engine / Front-Wheel Drive</li>
+                        <li>Top speed over 100 MPH</li>
+                        <li>Tire Sizes: Front: 135/80 R15 / Rear: 175/65 R15 with Tire Deflation Detection System</li>
+                    </ul>
+
+                    <h6>Standard Convenience Features include:</h6>
+                    <ul class="square-list">
+                        <li>Air Conditioning / Heater / 2 adjustable vents / Defrost front and side windows</li>
+                        <li>6-way manual driver seat / Cloth</li>
+                        <li>Power windows</li>
+                        <li>Power door lock</li>
+                        <li>Cruise control</li>
+                        <li>Odometer / Trip computer</li>
+                        <li>Interior light</li>
+                        <li>Rear seat LATCH safety system; rear seat USB power port</li>
+                        <li>Disc brakes with Hill Start assist</li>
+                        <li>Auxilary power - cigarette lighter 12v, additional USB port</li>
+                        <li>3 yr / 36,000 mile warranty</li>
+                        <li>Pep Boys is the anticipated official service provider</li>
+                        <li>Parking brake</li>
+                        <li>Plus hundreds of options like leather seats, stereo upgrades, radio add-on, etc.</li>
+                    </ul>
+                </div>
+                <div class="cell large-5 large-offset-1">
+                    <h6>Exterior measurements:</h6>
+                    <ul class="square-list">
+                        <li>Overall Length: 160.5”</li>
+                        <li>Overall Width: 75.5”</li>
+                        <li>Overall Height: 54.2”</li>
+                        <li>Front Wheel Track: 66.8” (center rim to center rim)</li>
+                        <li>Wheelbase: 110” (center of front wheels to center of rear wheel)</li>
+                        <li>Ground Clearance: 5.75” / 15 degree approach angle</li>
+                    </ul>
+
+                    <h6>Interior measurements, seats 2 in tandem:</h6>
+                    <ul class="square-list">
+                        <li>Headroom: Driver 39.8” Passenger 36.4”</li>
+                        <li>Seat width: Driver 20.6” Passenger 25.3”</li>
+                        <li>Interior Shoulder Width: 27.8”</li>
+                        <li>Front seat Legroom: 42.7”</li>
+                        <li>Rear seat Legroom: 33.1”</li>
+                        <li>Trunk Size: 27” x 14” x 10” / Rear seat folds down for additional space</li>
+                    </ul>
+
+                    <h6>Colors:</h6>
+                    <ul class="square-list">
+                        <li>Rocket Silver</li>
+                        <li>Sour Apple</li>
+                        <li>Creamsicle</li>
+                        <li>Red Hot</li>
+                        <li>True Blue</li>
+                        <li>Licorice</li>
+                        <li>Marshmallow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<?php get_footer() ?>

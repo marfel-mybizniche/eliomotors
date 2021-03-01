@@ -1,5 +1,6 @@
 /** === Custom Block Editor === */
-
+@import 'https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap';
+@import 'https://use.typekit.net/het5epm.css';
 
 /* Main column width */
 .wp-block {
@@ -82,4 +83,12 @@ h5 {
 h6 {
   font-size: 18px;
   font-family: "Rajdhani", sans-serif;
+}
+
+.text-center, .sec_banner {
+  text-align: center;
+}
+
+.wp-block-group {
+  border:1px dotted #fcfcfc;
 }
