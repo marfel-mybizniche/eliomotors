@@ -15,6 +15,47 @@ get_header(); ?>
                         <p>Before we even put pen to paper to build the ultimate electric commuter vehicle, these three Elio “Must-haves” were etched indelibly in our minds and hearts.</p>
                     </div>
                 </div>
+                
+                <div class="wp-block-columns grid-x grid-margin-x">
+
+                    <div class="wp-block-column cell large-4">
+                        <div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large">
+                            <figure class="wp-block-media-text__media">
+                            <img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full">
+                            </figure>
+                            <div class="wp-block-media-text__content">
+                                <h6>Must-have 1:</h6>
+                                <h6>Uncompromised Safety</h6>
+                                <p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-block-column cell large-4">
+                        <div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large">
+                            <figure class="wp-block-media-text__media">
+                            <img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full">
+                            </figure>
+                            <div class="wp-block-media-text__content">
+                                <h6>Must-have 1:</h6>
+                                <h6>Uncompromised Safety</h6>
+                                <p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-block-column cell large-4">
+                        <div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large">
+                            <figure class="wp-block-media-text__media">
+                            <img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full">
+                            </figure>
+                            <div class="wp-block-media-text__content">
+                                <h6>Must-have 1:</h6>
+                                <h6>Uncompromised Safety</h6>
+                                <p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="banner_images">
@@ -32,7 +73,7 @@ get_header(); ?>
             <div class="grid-x grid-margin-x">
                 <div class="cell large-6">
                     <h6>Technical Features include:</h6>
-                    <ul class="square-list">
+                    <ul class="square_list">
                         <li>150 Mile Range</li>
                         <li>Elio Safety Management System that includes three airbags, unibody frame, Anti-Lock Braking System, and Electronic Stability Control</li>
                         <li>Front Engine / Front-Wheel Drive</li>
@@ -41,7 +82,7 @@ get_header(); ?>
                     </ul>
 
                     <h6>Standard Convenience Features include:</h6>
-                    <ul class="square-list">
+                    <ul class="square_list">
                         <li>Air Conditioning / Heater / 2 adjustable vents / Defrost front and side windows</li>
                         <li>6-way manual driver seat / Cloth</li>
                         <li>Power windows</li>
@@ -60,7 +101,7 @@ get_header(); ?>
                 </div>
                 <div class="cell large-5 large-offset-1">
                     <h6>Exterior measurements:</h6>
-                    <ul class="square-list">
+                    <ul class="square_list">
                         <li>Overall Length: 160.5”</li>
                         <li>Overall Width: 75.5”</li>
                         <li>Overall Height: 54.2”</li>
@@ -70,7 +111,7 @@ get_header(); ?>
                     </ul>
 
                     <h6>Interior measurements, seats 2 in tandem:</h6>
-                    <ul class="square-list">
+                    <ul class="square_list">
                         <li>Headroom: Driver 39.8” Passenger 36.4”</li>
                         <li>Seat width: Driver 20.6” Passenger 25.3”</li>
                         <li>Interior Shoulder Width: 27.8”</li>
@@ -80,7 +121,7 @@ get_header(); ?>
                     </ul>
 
                     <h6>Colors:</h6>
-                    <ul class="square-list">
+                    <ul class="square_list">
                         <li>Rocket Silver</li>
                         <li>Sour Apple</li>
                         <li>Creamsicle</li>

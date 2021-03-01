@@ -94,8 +94,13 @@ h6 {
 
 .icon-left {
   text-align: left;
+  grid-template-columns: 25% 1fr !important;
 }
 .icon-left figure {
   float: left;
   max-width: 115px;
+}
+.icon-left h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
 }

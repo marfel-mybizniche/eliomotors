@@ -278,11 +278,40 @@ ul.check-list {
 	
 }
 
+.square_list {
+	margin: 0 0 30px;
+	padding: 0;
+
+	li {
+		list-style: none;
+		padding: 5px 0 5px 25px;
+		position: relative;
+
+		&:before {
+			content: "";
+			background: $color-primary;
+			position: absolute;
+			width: 8px;
+			height: 10px;
+			left: 0;
+			top: 13px;
+			transform: skewX(-15deg);
+		}
+	}
+
+	&.inline {
+
+		li {
+			display: inline-block;
+		}
+	}
+}
+
 
 
 //Radius button and label
 .radius {
-	border-radius: 10px;
+	border-radius: 10px; 
 
 	&.button {
 		border-radius: 10px;
@@ -342,8 +371,9 @@ ul.check-list {
 		position: relative;
 		padding-left: 60px;
 		margin-bottom: 20px;
+		text-align: left;
 		
-		.icon {
+		.icon, .wp-block-media-text__media {
 			position: absolute;
 			left: 0;
 			max-width: 40px;
@@ -355,7 +385,7 @@ ul.check-list {
 		&.large {
 			padding-left: 110px;
 	
-			.icon {
+			.icon, .wp-block-media-text__media {
 				max-width: 85px;
 			}
 	
