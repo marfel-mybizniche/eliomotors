@@ -171,7 +171,7 @@ function my_acf_blocks_init() {
             'name'              => 'pagebanner',
             'title'             => __('Banner'),
             'description'       => __('Add custom banner'),
-            'render_template'   => 'blocks/acf-blocks.php',
+            'render_template'   => 'blocks/acf-banner.php',
             'category'          => 'formatting',
         ));
     }
