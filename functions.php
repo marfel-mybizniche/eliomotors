@@ -173,6 +173,15 @@ function my_acf_blocks_init() {
             'description'       => __('Add custom banner'),
             'render_template'   => 'blocks/acf-banner.php',
             'category'          => 'formatting',
+            // 'example'  => array(
+            //     'attributes' => array(
+            //         'mode' => 'preview',
+            //         'data' => array(
+            //           'testimonial'   => "Your testimonial text here",
+            //           'author'        => "John Smith"
+            //         )
+            //     )
+            // )
         ));
     }
 }

@@ -89,5 +89,13 @@ h6 {
 }
 
 .wp-block-group {
-  border:1px dotted #fcfcfc;
+  border:2px dashed #eee;
+}
+
+.icon-left {
+  text-align: left;
+}
+.icon-left figure {
+  float: left;
+  max-width: 115px;
 }
