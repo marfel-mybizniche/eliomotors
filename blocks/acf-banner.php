@@ -26,7 +26,7 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $bannerTitle = get_field('banner_title') ?: 'Custom Page Title';
-$bannerSubTitle = get_field('banner_subtitle') ?: 'Sub Title';
+$bannerSubtitle = get_field('banner_subtitle') ?: 'Sub Title';
 $bannerDescription = get_field('banner_description') ?: 'Description / Caption';
 
 ?>
