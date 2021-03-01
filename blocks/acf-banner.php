@@ -25,9 +25,9 @@ if( !empty($block['align']) ) {
 }
 
 // Load values and assign defaults.
-$bannerTitle = get_field('testimonial') ?: 'Custom page title';
-$bannerSubTitle = get_field('author') ?: 'Sub Title';
-$bannerDescription = get_field('role') ?: 'Description / Caption';
+$bannerTitle = get_field('banner_title') ?: 'Custom Page Title';
+$bannerSubTitle = get_field('banner_subtitle') ?: 'Sub Title';
+$bannerDescription = get_field('banner_description') ?: 'Description / Caption';
 
 ?>
 <section class="sec_banner">
