@@ -121,7 +121,61 @@
 
 
 //Features page
+.feat_must_have {
+    h5 {
+        font: 24px $font-rajdhani;
+        margin: 0;
+    }
+    h4 {
+        font: 32px $font-rajdhani;
+    }
+}
 
+.sec_feat_images {
+    margin: -200px 0 50px;
+
+    .wp-block-group__inner-container {
+        padding: 0;
+        max-width: none;
+    }
+
+    .wp-block-gallery {
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            margin: 0 -10%;
+            align-items: center;
+
+            li {
+                list-style: none;
+                padding: 0 50px;
+                width: 32%;
+                text-align: center;
+
+                &:nth-child(2) {
+                    width: 38%;
+                }
+            } 
+        }
+    } 
+    
+    .note {
+        color: $color-grey;
+        font-size: 12px;
+    }
+}
+.sec_feat_detail {
+    padding: 100px 0;
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    h6 {
+        font-weight: 600;
+    }
+}
 
 
 
