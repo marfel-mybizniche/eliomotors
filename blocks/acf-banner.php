@@ -37,7 +37,7 @@ $bannerDescription = get_field('banner_description') ?: 'Description / Caption';
 				<div class="cell large-9">
 					<h5><?= $bannerSubtitle; ?></h5>
 					<h2><?= $bannerTitle; ?></h2>
-                    <?php if($bannerDescription) != 'Description / Caption') { ?>
+                    <?php if($bannerDescription != 'Description / Caption') { ?>
 					<p><?= $bannerDescription; ?></p>
                     <?php } ?>
 				</div>
