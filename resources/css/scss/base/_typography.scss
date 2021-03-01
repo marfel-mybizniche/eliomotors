@@ -62,6 +62,12 @@ h6{
     text-transform: uppercase;
 }
 
+p {
+    strong {
+        font-weight: 500;
+    }
+}
+
 @media (max-width: 1280px){
     h1{
         font-size: 64px;
@@ -256,9 +262,17 @@ blockquote {
 
         &:before {
             content: "";
-            width: 70px;
-            height: 70px;
+            width: 65px !important;
+            height: 70px !important;
             background-size: 38px;
+        }
+
+        &.small {
+            padding-left: 90px;
+
+            &:before {
+                left: 0;
+            }
         }
         
         &.large {
@@ -268,6 +282,7 @@ blockquote {
 
     @media (max-width: 767px) {
         font-size: 22px;
+        padding: 85px 0 0 !important;
         
         &.small {
             font-size: 18px;

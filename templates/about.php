@@ -28,20 +28,22 @@ get_header(); ?>
 
     <section class="sec_why_elio">
         <div class="grid-container">
-            <div class="grid-x grid-margin-x">
-                <div class="cell large-6">
+            <div class="grid-x copy">
+                <div class="cell large-6 copy_left">
                     <p>And in case you haven’t noticed, the world, and personal space along with it, is shrinking. We simply need to evolve to more efficient and practical forms of transportation.</p>
                     <p>We need a new way to get around. And Elio is that new way.</p>
                     <h2>Never has different, sexy, and fun tag teamed so well with serious, practical, and smart.</h2>
                 </div>
-                <div class="cell large-6">
+                <div class="cell large-5 large-offset-1 copy_right">
                     <p>Consider:</p>
-                    <ul class="check-list">
+                    <ul class="check_list primary">
                         <li>Elio is American made</li>
                         <li>3 days of charge-free commuting</li>
                         <li>Engineered to deliver the highest safety standards</li>
                         <li>All for an unheard-of targeted $14,900* base price</li>
                     </ul>
+                    <p>The positive impact of Elio ripples well beyond personal owner benefits. It will generate thousands of jobs while setting a whole new standard for environmental friendliness.</p>
+                    <h4>So, why Elio? A better question might be “Why anything else?”</h4>
                 </div>
             </div>
         </div>
@@ -50,17 +52,17 @@ get_header(); ?>
     <section class="sec_how_elio">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-7 large-offset-2">
+                <div class="cell large-10 large-offset-1 xlarge-7 xlarge-offset-2">
                     <h5>How It All Began?</h5>
                     <h2>American ingenuity is alive and well. And the world has never been more ready for it.</h2>
                     <p>A few short years ago, automotive enthusiast Paul Elio sized up the prevailing status quo of personal transportation. He saw the soaring costs of the vehicles we drive and electric options going even higher. He saw Americans struggling with an economy that was taking too much and giving back too little. Paul Elio decided that the world was ready for something radically new. The result? A three-wheeled masterpiece of automotive brilliance that bears his name.</p>
                 </div>
             </div>
             <div class="grid-x grid-margin-x">
-                <div class="cell large-5 large-offset-1">
+                <div class="cell large-5 xlarge-5 xlarge-offset-1">
                     <figure><img src="<?php echo MBN_ASSETS_URI; ?>/img/about-3a.jpg" alt=""></figure>
                 </div>
-                <div class="cell large-6">
+                <div class="cell large-7 large-6">
                     <p class="pl-120"><strong>Paul set out from there with a clear-cut mission statement:</strong></p>
                     <blockquote class="small">
                         <p>To provide a fun-to-drive, super-economical personal transportation alternative, that’s affordable, safe, and environmentally friendly. We are committed to the American dream, creating American jobs, and bringing American automotive ingenuity to every vehicle we build. This is, and will remain our mission at Elio.</p>
@@ -81,7 +83,7 @@ get_header(); ?>
     <section class="sec_elio_mission">
         <div class="grid-container">
             <div class="grid-x">
-                <div class="cell large-10 large-offset-2">
+                <div class="cell large-11 large-offset-1 xlarge-10 xlarge-offset-2">
                     <div class="mission_copy">
                         <h5>The Elio Mission</h5>
                         <h4>To provide a fun-to-drive, super-economical personal transportation alternative, based on a list of consumer focused “must-haves” that keep our vehicles affordable, safe, and environmentally friendly.</h4>
@@ -102,49 +104,49 @@ get_header(); ?>
         <div class="grid-container">
 
             <div class="grid-x grid-margin-x">
-                <div class="cell large-8 large-offset-2 text-center">
+                <div class="cell large-10 large-offset-1 xlarge-8 xlarge-offset-2 text-center">
                     <h5>Board Members</h5>
                     <h2>Giants on Board.</h2>
-                    <p>By any measure, the Elio Board of Directors makes for an impressive roster of industry icons. Each one intensely focused on the Elio vision of transforming the American transportation industry. We invite you to click on and read their bios.</p>
+                    <p>By any measure, the Elio Board of Directors makes for an impressive roster of industry icons. Each one intensely focused on the Elio vision of transforming the American transportation industry. We invite you to click on and read their bios.</p><br><br>
                 </div>
             </div>
 
             <div class="grid-x grid-margin-x member_item">
-                <div class="cell large-4 large-offset-2">
+                <div class="cell large-4 large-offset-1 xlarge-4 xlarge-offset-2">
                     <h4>James Holden</h4>
                     <p>Board Member</p>
                 </div>
-                <div class="cell large-5">
+                <div class="cell large-6 xlarge-5">
                     <p>Mr. Holden is the former Chief Executive Officer of DaimlerChrysler, where he worked in various leadership positions for 19 years. His roles included Executive Vice President of Sales and Marketing responsible for directing all of the automaker’s sales, fleet, and marketing organizations in the United States, Mexico, and Canada, including Mopar parts operations. In addition, he serves as a director of Sirius XM Radio Inc., Snap-on Inc., and Speedway Motorsports. Mr. Holden was a director of Motors Liquidation Company until its dissolution in December 2011. Formerly, Mr. Holden served as a director for Meridian Automotive Systems, Inc. Mr. Holden earned a B.S. in political science from Western Michigan University and a M.B.A. from Michigan State University.</p>
                 </div>
             </div>
 
             <div class="grid-x grid-margin-x member_item">
-                <div class="cell large-4 large-offset-2">
+                <div class="cell large-4 large-offset-1 xlarge-4 xlarge-offset-2">
                     <h4>Ken Way</h4>
                     <p>Board Member</p>
                 </div>
-                <div class="cell large-5">
+                <div class="cell large-6 xlarge-5">
                     <p>Mr. Way served as the Chief Executive Officer of Lear Corporation from 1988 to September 2000 and Chairman of the Board from 1988 to December 2002. Mr. Way served with Lear Corporation and its predecessor companies for 37 years in various engineering, manufacturing, and general management capacities. During his career he has served as a Director for several organizations, including Wesco International Inc., Wesco Distribution, Inc., CMS Energy Corporation, Consumers Energy Company of Consumers Gas Group, North American Rubber Inc., Cooper-Standard Holdings Inc. (formerly, Cooper- Standard Automotive Inc.), Cooper-Standard Automotive NC L.L.C., and Cooper-Standard Automotive FHS Inc., United Way Cancer Institute, Business Leaders for Michigan, RP Scherer Corporation, Lear Corp., Comerica Inc. (Holding Company of Comerica Bank), Catalent Pharma Solutions Inc., and Detroit Renaissance, He is a Trustee of Kettering University and Henry Ford Health Systems.</p>
                 </div>
             </div>
 
             <div class="grid-x grid-margin-x member_item">
-                <div class="cell large-4 large-offset-2">
+                <div class="cell large-4 large-offset-1 xlarge-4 xlarge-offset-2">
                     <h4>Hari Iyer</h4>
                     <p>Board Member</p>
                 </div>
-                <div class="cell large-5">
+                <div class="cell large-6 xlarge-5">
                     <p>Mr. Lichter is founder, President and Chairman of the Board for IRG, LLC. He oversees all critical aspects of the business, including acquisitions, leasing, and property management at IRG. Mr. Lichter has held positions with General Services Administration of the United States Government, Mortgage Loan Department of New York Life Insurance Company, Marine Midland, and started Quadrelle Realty Services, Inc. In recent years, he has acquired, in various forms and partnerships, over 100 industrial and commercial properties with a total size in excess of 100,000,000 square feet-making the portfolio the largest private holding of industrial and commercial real estate in the nation. Mr. Lichter is a national leader in transforming former military bases and industrial sites into thriving retail, residential and business.</p>
                 </div>
             </div>
 
             <div class="grid-x grid-margin-x member_item">
-                <div class="cell large-4 large-offset-2">
+                <div class="cell large-4 large-offset-1 xlarge-4 xlarge-offset-2">
                     <h4>David C. Schembri</h4>
                     <p>Board Member</p>
                 </div>
-                <div class="cell large-5">
+                <div class="cell large-6 xlarge-5">
                     <p>Mr. Iyer brings nearly 25 years of product development, business strategy and operations expertise in the automotive industry, and brings to Elio Motors his valuable experience from several executive level and senior operating positions for established and startup automotive companies.</p>
                     <p>Most recently, Mr. Iyer was Executive Vice President at Envia Systems, a Silicon Valley battery company backed by venture investors, where he led all aspects of business strategy and product commercialization. Prior to Envia, Mr. Iyer was Vice President, Engineering at Next Autoworks, a Kleiner Perkins, and Google Ventures funded company. At Next, Mr. Iyer set the original vehicle architecture, led the selection of vehicle technologies and suppliers, was responsible for all module engineering teams (Powertrain, Chassis, Exterior, Interior, Electrical & Vehicle Integration), and was accountable for all vehicle goals, including Safety, Bill of Materials Cost, Fuel Economy, Drivability, Vehicle Dynamics, Craftsmanship, and Product Quality.</p>
                     <p>Mr. Iyer also created and directed the industry’s first collaborative vehicle development process called CarWorks (modeled after Lockheed Martin’s Skunk Works that developed the first stealth aircraft for its structure as an elite development team tasked with achieving breakthrough innovation under aggressive time and budget constraints), which involved appointing around 65 major Tier-1 automotive suppliers at the C-level executive and Division President level. The lean and collaborative process resulted in the completion of higher quality, soft-tooled running prototypes in one-third of the budget used by traditional OEM programs. Mr. Iyer successfully led his team to deliver the first production-intent prototypes, performing highly against competitive vehicles and logging over 5,000 miles without technical issues.</p>

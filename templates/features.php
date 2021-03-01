@@ -15,47 +15,6 @@ get_header(); ?>
                         <p>Before we even put pen to paper to build the ultimate electric commuter vehicle, these three Elio “Must-haves” were etched indelibly in our minds and hearts.</p>
                     </div>
                 </div>
-                
-                <div class="wp-block-columns grid-x grid-margin-x feat_must_have">
-
-                    <div class="wp-block-column cell large-4">
-                        <div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large">
-                            <figure class="wp-block-media-text__media">
-                            <img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full">
-                            </figure>
-                            <div class="wp-block-media-text__content">
-                                <h5>Must-have 1:</h5>
-                                <h4>Uncompromised Safety</h4>
-                                <p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wp-block-column cell large-4">
-                        <div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large">
-                            <figure class="wp-block-media-text__media">
-                            <img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full">
-                            </figure>
-                            <div class="wp-block-media-text__content">
-                                <h5>Must-have 1:</h5>
-                                <h4>Uncompromised Safety</h4>
-                                <p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wp-block-column cell large-4">
-                        <div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large">
-                            <figure class="wp-block-media-text__media">
-                            <img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full">
-                            </figure>
-                            <div class="wp-block-media-text__content">
-                                <h5>Must-have 1:</h5>
-                                <h4>Uncompromised Safety</h4>
-                                <p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
         <!-- <div class="banner_images">
@@ -67,8 +26,62 @@ get_header(); ?>
         </div> -->
     </section>
 
-    <div class="wp-block-group sec_feat_images"><div class="wp-block-group__inner-container">
-<figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a.jpg" alt="" data-id="110" data-full-url="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a.jpg" data-link="http://eliomotors.mbndigital.com/features/feature-1a/" class="wp-image-110" srcset="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a.jpg 700w, http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a-300x192.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" width="700" height="447"></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b.jpg" alt="" data-id="111" data-full-url="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b.jpg" data-link="http://eliomotors.mbndigital.com/features/feature-1b/" class="wp-image-111" srcset="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b.jpg 715w, http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b-300x273.jpg 300w" sizes="(max-width: 715px) 100vw, 715px" width="715" height="650"></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c.jpg" alt="" data-id="113" data-full-url="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c.jpg" data-link="http://eliomotors.mbndigital.com/features/feature-1c/" class="wp-image-113" srcset="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c.jpg 700w, http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c-300x192.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" width="700" height="447"></figure></li></ul></figure>
+    <div class="wp-block-group sec_feat_intro"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns grid-x grid-margin-x feat_must_have">
+<div class="wp-block-column cell large-4">
+<div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large"><figure class="wp-block-media-text__media"><img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-safety-system.svg" alt="" class="wp-image-100 size-full"></figure><div class="wp-block-media-text__content">
+<h5>Must-have 1:</h5>
+
+
+
+<h4>Uncompromised Safety</h4>
+
+
+
+<p>Elio is engineered to the highest safety standards. Each Elio comes equipped with a Safety Management System that includes three airbags – a unibody frame, Anti-Lock Braking System, and 50% larger crush zones than similar vehicles.<br></p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column cell large-4">
+<div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large"><figure class="wp-block-media-text__media"><img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-all-american.svg" alt="" class="wp-image-119 size-full"></figure><div class="wp-block-media-text__content">
+<h5>Must-have 2:<br>All-American Pedigree</h5>
+
+
+
+<h4>All-American Pedigree</h4>
+
+
+
+<p>Elio will be American-made targeting the utilization of North American content from top suppliers, and we have re-engineered existing technology throughout. That means no trial and error anywhere. Just tried and true everywhere.</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column cell large-4">
+<div class="wp-block-media-text alignwide is-stacked-on-mobile icon_left large"><figure class="wp-block-media-text__media"><img src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/icn-low-price.svg" alt="" class="wp-image-120 size-full"></figure><div class="wp-block-media-text__content">
+<h5>Must-have 3</h5>
+
+
+
+<h4>Low Price</h4>
+
+
+
+<p>It seems like everything just costs more today. Houses, cars, heck, even a gallon of milk and a box of cereal. At Elio Motors, we believe wallets need a break. A new electric vehicle targeted $14,900* base price is not just what people want. It’s what they need.</p>
+</div></div>
+</div>
+</div>
+
+
+
+<figure class="wp-block-gallery columns-3 is-cropped feat_images"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a.jpg" alt="" data-id="110" data-full-url="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a.jpg" data-link="http://eliomotors.mbndigital.com/features/feature-1a/" class="wp-image-110" srcset="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a.jpg 700w, http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1a-300x192.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" width="700" height="447"></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b.jpg" alt="" data-id="111" data-full-url="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b.jpg" data-link="http://eliomotors.mbndigital.com/features/feature-1b/" class="wp-image-111" srcset="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b.jpg 715w, http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1b-300x273.jpg 300w" sizes="(max-width: 715px) 100vw, 715px" width="715" height="650"></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" src="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c.jpg" alt="" data-id="113" data-full-url="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c.jpg" data-link="http://eliomotors.mbndigital.com/features/feature-1c/" class="wp-image-113" srcset="http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c.jpg 700w, http://eliomotors.mbndigital.com/wp-content/uploads/2021/03/feature-1c-300x192.jpg 300w" sizes="(max-width: 700px) 100vw, 700px" width="700" height="447"></figure></li></ul></figure>
+
+
+
+<p class="has-text-align-center note">*MSRP excludes destination/delivery charges, taxes, title, registration, and options/installation.</p>
 </div></div>
     
     <section class="sec_feat_detail">
