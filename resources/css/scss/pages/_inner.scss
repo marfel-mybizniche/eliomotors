@@ -44,12 +44,6 @@
     background:$color-dark url(../img/bg-why-elio.jpg) no-repeat center bottom / cover;
     padding: 8% 0 35%;
     color: $color-white;
-
-    .check-list {
-        li {
-            &:before {}
-        }
-    }
 }
 
 .sec_how_elio {
@@ -122,6 +116,8 @@
 
 //Features page
 .feat_must_have {
+    padding-top: 50px;
+    
     h5 {
         font: 24px $font-rajdhani;
         margin: 0;

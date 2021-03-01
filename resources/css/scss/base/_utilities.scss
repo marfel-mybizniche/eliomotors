@@ -60,6 +60,12 @@
 }
 
 
+// Text align
+.has-text-align-center {
+	text-align: center;
+}
+
+
 //Custom foundation / Blocks
 .wp-block-group__inner-container {
     padding-right: calc(#{$grid-container-padding} / 2);

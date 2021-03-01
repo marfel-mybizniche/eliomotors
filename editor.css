@@ -92,15 +92,15 @@ h6 {
   border:2px dashed #eee;
 }
 
-.icon-left {
+.icon_left {
   text-align: left;
   grid-template-columns: 25% 1fr !important;
 }
-.icon-left figure {
+.icon_left figure {
   float: left;
   max-width: 115px;
 }
-.icon-left h5 {
+.icon_left h5 {
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
 }
