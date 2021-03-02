@@ -62,7 +62,7 @@ get_header(); ?>
                 <div class="cell large-5 xlarge-5 xlarge-offset-1">
                     <figure><img src="<?php echo MBN_ASSETS_URI; ?>/img/about-3a.jpg" alt=""></figure>
                 </div>
-                <div class="cell large-7 large-6">
+                <div class="cell large-7 xlarge-6">
                     <p class="pl-120"><strong>Paul set out from there with a clear-cut mission statement:</strong></p>
                     <blockquote class="small">
                         <p>To provide a fun-to-drive, super-economical personal transportation alternative, that’s affordable, safe, and environmentally friendly. We are committed to the American dream, creating American jobs, and bringing American automotive ingenuity to every vehicle we build. This is, and will remain our mission at Elio.</p>

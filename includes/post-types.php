@@ -57,3 +57,41 @@ function courses_post() {
     );
 }
 //add_action( 'init', 'courses_post' ); 
+
+
+// Register locations Post Type
+function locations_post() {
+    register_post_type( 'location',
+        array(
+            'labels'    => array(
+                'name' => __( 'Locations' ),
+                'singular_name' => __('Location')
+            ),
+            'public'        => true,
+            'has_archive'   => true,
+            'show_in_rest'  => true,
+            'menu_position' => 20,
+            'with_front' => true,
+            'supports'      =>  array('title', 'editor', 'page-attributes', 'thumbnail'),
+            'menu_icon'     => 'dashicons-editor-paragraph',
+        )
+    );
+
+    register_taxonomy(  
+        'locations-cat',
+        'location',
+        array(
+            'hierarchical' => true,         
+            'has_archive' => true,
+            'label' => 'Categories',            
+            'query_var' => true,
+            'show_admin_column' => true,
+            'show_in_rest' => true,
+            /*'rewrite' => array(
+                'slug' => 'locations',
+                'with_front' => true  
+            )*/
+        )
+    );
+}
+add_action( 'init', 'locations_post' ); 
