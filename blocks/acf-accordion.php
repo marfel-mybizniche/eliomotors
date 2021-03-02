@@ -34,8 +34,8 @@ if( !empty($block['align']) ) {
         $heading = get_sub_field('heading');
         $content = get_sub_field('content');
         ?>
-        <li>
-			<a href="#" class="accordion-title">Accordion 1</a>
+        <li class="accordion-item" data-accordion-item>
+			<a href="#" class="accordion-title"><?php the_sub_field('heading'); ?></a>
             
 			<div class="accordion-content" data-tab-content>
 			<p><?php the_sub_field('content'); ?></p>
