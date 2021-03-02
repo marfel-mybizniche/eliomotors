@@ -202,5 +202,4 @@ function my_acf_blocks_init() {
             // )
         ));
     }
-    }
 }
