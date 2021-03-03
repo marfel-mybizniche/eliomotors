@@ -24,6 +24,12 @@
                 variableWidth: true
             });
 
+            $('.location_states').slick({
+                //infinite: true,
+                slidesToShow: 7,
+                slidesToScroll: 1
+            });
+
         }
         
         
