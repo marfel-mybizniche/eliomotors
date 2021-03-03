@@ -47,8 +47,7 @@ function find_us_gmap() {
         endwhile; 
         wp_reset_postdata();
         
-        $postvar .=" 
-        for (var i = 0; i < locations.length; i++) {
+        $postvar .="  for (var i = 0; i < locations.length; i++) {
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map
