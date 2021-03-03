@@ -30,10 +30,10 @@ $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status
                 var office_lat = <?php echo get_field('map_location')['lat']; ?>; 
                 var office_lng = <?php echo get_field('map_location')['lng']; ?>; 
 
-             loc_content = '<div id='mapInfo".get_the_ID()."'>';";
-             loc_content += '' +loc_title+ '';";
-             loc_content += '</div>';";
-             loc_content += '</div>';";
+             loc_content = '<div id='mapInfo<?php the_ID()?>'>;
+             loc_content += '' +loc_title+ '';
+             loc_content += '</div>';
+             loc_content += '</div>';
     
              array_holder = [loc_title, office_lat, office_lng, loc_content];
             locations.push(array_holder);
