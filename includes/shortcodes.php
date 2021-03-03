@@ -52,8 +52,6 @@ function find_us_gmap(){
             loc_content += '' +loc_title+ '';
 
             loc_content += '</div>';
-
-            <?php endif; ?>
     
             loc_content += '</div>';
     
