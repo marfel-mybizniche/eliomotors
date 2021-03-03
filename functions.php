@@ -158,5 +158,5 @@ require MBN_DIR_PATH.'/includes/post-types.php';
 require MBN_DIR_PATH.'/includes/shortcodes.php';
 require MBN_DIR_PATH.'/includes/public-hooks.php';
 require MBN_DIR_PATH.'/includes/admin-hooks.php';
-require MBN_DIR_PATH.'/blocks/acf-block-setup.php';
+require MBN_DIR_PATH.'/blocks/acf-blocks-setup.php';
 
