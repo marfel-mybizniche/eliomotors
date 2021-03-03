@@ -29,7 +29,7 @@ if( !empty($block['align']) ) {
 
 ?>
 <?php if( have_rows('accordion_items') ): ?>
-    <ul  class="accordion" data-accordion>
+    <ul id="<?=  $id; ?>" class="accordion <?= $className ?>" data-accordion>
     <?php while( have_rows('accordion_items') ): the_row(); 
         $heading = get_sub_field('heading');
         $content = get_sub_field('content');
@@ -38,9 +38,11 @@ if( !empty($block['align']) ) {
 			<a href="#" class="accordion-title"><?php the_sub_field('heading'); ?></a>
             
 			<div class="accordion-content" data-tab-content>
-			<p><?php the_sub_field('content'); ?></p>
+			<?php the_sub_field('content'); ?>
 			</div>
         </li>
     <?php endwhile; ?>
     </ul>
-<?php endif; ?>
+<?php else: ?>
+
+<?php endif;  ?>
