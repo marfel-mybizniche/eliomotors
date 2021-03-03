@@ -46,7 +46,7 @@ foreach ( $location_categories as $location_category ) {
             $locations->the_post();
             $terms = get_the_terms( $post->ID, 'location-apps' );
 
-            $getPostCount = count ();
+            $getPostCount = count();
             ?>
             <li class="<?php if($terms) foreach( $terms as $term ) echo ' '.$term->slug; ?>">
                 <div class="location-list-item" data-count="<?php echo $getPostCount; ?>">
