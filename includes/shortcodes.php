@@ -13,10 +13,12 @@ function find_us_gmap() {
     $locLoop = new WP_Query( $locArgs ); ?>
     <div class="location_map">
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDac2mOtJr_IktjUhiLZYRL_xHzxRbodRE&callback=initMap&libraries=&v=weekly" defer></script>
 
     <script>function initMap() {
         const myLatlng = { lat: 34.750713, lng: -111.263263 };
-        const map = new google.maps.Map(document.getElementById("map"), {
+        const map = new google.maps.Map(document.getElementById("gmap"), {
             zoom: 8,
             center: myLatlng,
         });
@@ -81,7 +83,7 @@ function find_us_gmap() {
         });
      
     }</script>
-    <div id="map" style="height:100vh"></div>
+    <div id="gmap"></div>
     </div>
 
     <ul class="location_states">
