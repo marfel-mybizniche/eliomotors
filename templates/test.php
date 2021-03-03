@@ -45,11 +45,10 @@ foreach ( $location_categories as $location_category ) {
         while ( $locations->have_posts() ) {
             $locations->the_post();
             $terms = get_the_terms( $post->ID, 'location-apps' );
-
-            $getPostCount = count();
+            
             ?>
             <li class="<?php if($terms) foreach( $terms as $term ) echo ' '.$term->slug; ?>">
-                <div class="location-list-item" data-count="<?php echo $getPostCount; ?>">
+                <div class="location-list-item">
                     <h6><?php the_title(); ?></h6>
                 </div>
             </li>
