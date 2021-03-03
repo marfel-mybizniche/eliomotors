@@ -28,13 +28,14 @@ function find_us_gmap() {
         var infowindow = new google.maps.InfoWindow();  
         var markers_array = new Array(), locations = [], array_holder, loc_content = '', loc_ctr = 0, emp_phones = '';";
     
-        while ( $locLoop->have_posts() ) : $locLoop->the_post();  if(!empty(get_field('map_location'))): 
+        while ( $locLoop->have_posts() ) : $locLoop->the_post();  
+            if(!empty(get_field('map_location'))): 
 
-            $postvar .=" var loc_title = " .get_the_title();
+            $postvar .=" var loc_title = " .get_the_title(). ";";
             $postvar .=" var office_lat = " .get_field('map_location')['lat'].";";
             $postvar .=" var office_lng = " .get_field('map_location')['lng'].";";
 
-            $postvar .=" loc_content = '<div id='mapInfo".get_the_ID().";";
+            $postvar .=" loc_content = '<div id='mapInfo".get_the_ID()."'>';";
             $postvar .=" loc_content += '' +loc_title+ '';";
             $postvar .=" loc_content += '</div>';";
             $postvar .=" loc_content += '</div>';";
@@ -44,8 +45,9 @@ function find_us_gmap() {
             
             loc_ctr = loc_ctr+1; ";
             
-            endif; ?>
-            <?php endwhile; wp_reset_postdata(); wp_reset_query(); 
+            endif;   
+        endwhile; 
+        wp_reset_postdata();
         
         $postvar .=" 
         for (var i = 0; i < locations.length; i++) {
