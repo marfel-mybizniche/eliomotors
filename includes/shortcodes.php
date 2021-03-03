@@ -12,12 +12,11 @@ function find_us_gmap() {
     $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
     $locLoop = new WP_Query( $locArgs ); 
     $postvar = "";
-    ?>
-    
-    <div class="location_map">
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDac2mOtJr_IktjUhiLZYRL_xHzxRbodRE&callback=initMap&libraries=&v=weekly" defer></script>
+    $postvar .='<div class="location_map">';
+    $postvar .='<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>';
+    $postvar .='<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDac2mOtJr_IktjUhiLZYRL_xHzxRbodRE&callback=initMap&libraries=&v=weekly" defer></script>';
+    ?>
 
     <script>function initMap() {
         const myLatlng = { lat: 34.750713, lng: -111.263263 };
@@ -87,7 +86,7 @@ function find_us_gmap() {
      
     }</script>
     
-    <?php $postvar   .= '<div id="gmap"></div>'; ?>
+    <?php $postvar   .= '<div id="gmap" style="height:100vh"></div>'; ?>
     
 </div>
 
