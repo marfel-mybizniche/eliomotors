@@ -86,34 +86,7 @@ function find_us_gmap() {
     <div id="map" style="height:100vh"></div>
     </div>
 
-    <ul class="location_states">
-    <?php
-        $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-        $loc_content = "";
-        foreach ( $location_categories as $location_category ) {
-            $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )
-                ), 'post_type' => 'location', 'orderby' => 'title,');
-            $locations = new WP_Query( $args ); 
-            $loc_content = "";    
-            echo '<li class="state_item '. $location_category->slug .'">';
-            echo '<h6 class="state_name">'. $location_category->name .'</h6>';
-                echo '<ul class="location_list">';
-                while ( $locations->have_posts() ) { $locations->the_post();
 
-                    ?>
-                    <li class="city_item">
-                        <a href="#"><?php the_title(); ?></a>
-                    </li>
-                    <?php
-                }
-                echo '</ul>';
-            echo '</li>';
-
-        }
-
-        return $loc_content;
-    ?>
-    </ul>
 
     <p class="note">
         <strong>NOTE:</strong> 
