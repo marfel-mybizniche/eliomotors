@@ -99,7 +99,6 @@ function find_us_gmap() {
             $loc_content .= '<h6 class="state_name">'. $location_category->name .'</h6>';
                 $loc_content .= "<ul class='location_list'>";
                 while ( $locations->have_posts() ) { $locations->the_post();
-                    $terms = get_the_terms( $post->ID, 'location-apps' );
 
                     ?>
                     <li class="city_item">
