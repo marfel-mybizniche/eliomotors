@@ -44,5 +44,5 @@ if( !empty($block['align']) ) {
     <?php endwhile; ?>
     </ul>
 <?php else: ?>
-testing testing
+    <img src="<?php echo MBN_ASSETS_URI; ?>/img/mbn-accordion.png" alt="">
 <?php endif;  ?>
