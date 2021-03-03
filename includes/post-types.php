@@ -69,10 +69,10 @@ function locations_post() {
             ),
             'public'        => true,
             'has_archive'   => true,
-            'show_in_rest'  => true,
+            //'show_in_rest'  => true,
             'menu_position' => 20,
             'with_front' => true,
-            'supports'      =>  array('title', 'editor', 'page-attributes', 'thumbnail'),
+            'supports'      =>  array('title', 'page-attributes'),
             'menu_icon'     => 'dashicons-editor-paragraph',
         )
     );
