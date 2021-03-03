@@ -119,7 +119,7 @@ $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status
 
                 ?>
                 <li class="city_item">
-                    <a href="<?php echo $locations->post_count; ?>"><?php the_title(); ?></a>
+                    <a href="<?php echo $locations->current_post; ?>"><?php the_title(); ?></a>
                 </li>
                 <?php
             }
