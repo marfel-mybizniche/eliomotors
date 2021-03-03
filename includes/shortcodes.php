@@ -30,18 +30,14 @@ function find_us_gmap() {
             if(!empty(get_field('map_location'))): 
 
             $postvar .=" var loc_title = '" .get_the_title(). "';";
-            $postvar .=" var loc_id = " .get_the_ID(). ";";
-
+            //$postvar .=" var loc_id = " .get_the_ID(). ";";
             $postvar .=" var office_lat = " .get_field('map_location')['lat'].";";
             $postvar .=" var office_lng = " .get_field('map_location')['lng'].";";
-
-            $postvar .=" loc_content = '<div id=mapInfo'+loc_id+'>';";
+            $postvar .=" loc_content = '<div id=mapInfo'+loc_ctr+'>';";
             $postvar .=" loc_content += '' +loc_title+ '';";
             $postvar .=" loc_content += '</div>';";
-    
             $postvar .=" array_holder = [loc_title, office_lat, office_lng, loc_content];
             locations.push(array_holder);
-            
             loc_ctr = loc_ctr+1; ";
             
             endif;   
@@ -84,17 +80,14 @@ function find_us_gmap() {
     }</script> ";
     
     $postvar   .= '<div id="gmap" style="height:100vh"></div>'; 
-    
     $postvar   .= '</div>';
-
-$postvar   .= '<ul class="location_states">';
-
+    $postvar   .= '<ul class="location_states">';
         $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-  
         foreach ( $location_categories as $location_category ) {
             $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )
                 ), 'post_type' => 'location', 'orderby' => 'title,');
             $locations = new WP_Query( $args ); 
+            $locCtr = 0;
             
             $postvar   .= '<li class="state_item '. $location_category->slug .'">';
             $postvar   .= '<h6 class="state_name">'. $location_category->name .'</h6>';
@@ -102,7 +95,8 @@ $postvar   .= '<ul class="location_states">';
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
-                    $postvar   .= '<a href="#map" class="triggerMap triggerMap'.get_the_ID().'" data-smooth-scroll="">'.get_the_title().'</a>';
+                    $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
+                    $locCtr++; 
                 }
                 $postvar   .= '</ul>';
                 $postvar   .= '</li>';
