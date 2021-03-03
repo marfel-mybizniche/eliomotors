@@ -30,10 +30,7 @@ if( !empty($block['align']) ) {
 ?>
 <?php if( have_rows('accordion_items') ): ?>
     <ul id="<?=  $id; ?>" class="accordion <?= $className ?>" data-accordion>
-    <?php while( have_rows('accordion_items') ): the_row(); 
-        $heading = get_sub_field('heading');
-        $content = get_sub_field('content');
-        ?>
+    <?php while( have_rows('accordion_items') ): the_row(); ?>
         <li class="accordion-item" data-accordion-item>
 			<a href="#" class="accordion-title"><?php the_sub_field('heading'); ?></a>
             
@@ -44,5 +41,5 @@ if( !empty($block['align']) ) {
     <?php endwhile; ?>
     </ul>
 <?php else: ?>
-    <img src="<?php echo MBN_ASSETS_URI; ?>/img/mbn-accordion.png" alt="">
+    <img src="<?php echo MBN_ASSETS_URI; ?>/img/mbn-accordion.png" alt="" style="display:block; margin:0 auto;">
 <?php endif;  ?>
