@@ -44,7 +44,7 @@ function find_us_gmap() {
             loc_ctr = loc_ctr+1;
 
             <?php endif; ?>
-            <?php endwhile; wp_reset_postdata(); ?>
+            <?php endwhile; wp_reset_postdata(); wp_reset_query(); ?>
         
         
         for (var i = 0; i < locations.length; i++) {
@@ -95,9 +95,9 @@ function find_us_gmap() {
                 ), 'post_type' => 'location', 'orderby' => 'title,');
             $locations = new WP_Query( $args ); 
 
-            $loc_content += '<li class="state_item '. $location_category->slug .'">';
-            $loc_content += '<h6 class="state_name">'. $location_category->name .'</h6>';
-                $loc_content += "<ul class='location_list'>";
+            $loc_content .= '<li class="state_item '. $location_category->slug .'">';
+            $loc_content .= '<h6 class="state_name">'. $location_category->name .'</h6>';
+                $loc_content .= "<ul class='location_list'>";
                 while ( $locations->have_posts() ) { $locations->the_post();
                     $terms = get_the_terms( $post->ID, 'location-apps' );
 
@@ -107,8 +107,8 @@ function find_us_gmap() {
                     </li>
                     <?php
                 }
-                $loc_content += "</ul>";
-            $loc_content += "</li>";
+                $loc_content .= "</ul>";
+            $loc_content .= "</li>";
 
         }
 
