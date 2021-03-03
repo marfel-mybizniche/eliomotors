@@ -6,7 +6,7 @@ get_header(); ?>
 
 <ul class="locations-by-tax">
 <?php
-$location_categories = get_terms( 'locations', array(
+$location_categories = get_terms( 'locations-cat', array(
     'orderby'    => 'title',
     'order'      => 'ASC',
     'parent' => 0,
@@ -21,7 +21,7 @@ foreach ( $location_categories as $location_category ) {
         'tax_query' => array(
             'relation' => 'AND',
             array(
-                'taxonomy' => 'locations',
+                'taxonomy' => 'locations-cat',
                 'field' => 'slug',
                 'terms' => $location_category->slug,
                 'include_children' => false
@@ -33,7 +33,7 @@ foreach ( $location_categories as $location_category ) {
     $locations = new WP_Query( $args );
 
 
-    $getTermChildCount = count (get_term_children( $location_category->term_id, 'locations' )); // Count Sub Categories
+    $getTermChildCount = count (get_term_children( $location_category->term_id, 'locations-cat' )); // Count Sub Categories
     $postCount = $locations->found_posts; // Count Post
 
     if($getTermChildCount < 1 and $postCount > 0) {
