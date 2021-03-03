@@ -106,7 +106,7 @@ function find_us_gmap(){
     
     
     }</script>
-    <div id="map"></div>
+    <div id="map" style="height:100vh"></div>
     <?php 
     }
     add_shortcode('display_loc_gmap', 'find_us_gmap');
