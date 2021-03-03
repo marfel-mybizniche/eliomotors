@@ -29,13 +29,13 @@ function find_us_gmap() {
         while ( $locLoop->have_posts() ) : $locLoop->the_post();  
             if(!empty(get_field('map_location'))): 
 
-            $postvar .=" var loc_title = " .get_the_title(). ";";
+            $postvar .=" var loc_title = '" .get_the_title(). "';";
+            $postvar .=" var loc_id = " .get_the_ID(). ";";
             $postvar .=" var office_lat = " .get_field('map_location')['lat'].";";
             $postvar .=" var office_lng = " .get_field('map_location')['lng'].";";
 
-            $postvar .=" loc_content = '<div id='mapInfo".get_the_ID()."'>';";
+            $postvar .=" loc_content = '<div id="mapInfo"'+loc_id+'>';";
             $postvar .=" loc_content += '' +loc_title+ '';";
-            $postvar .=" loc_content += '</div>';";
             $postvar .=" loc_content += '</div>';";
     
             $postvar .=" array_holder = [loc_title, office_lat, office_lng, loc_content];
