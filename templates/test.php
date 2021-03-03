@@ -27,8 +27,8 @@ $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status
             if(!empty(get_field('map_location'))): ?>
 
                 var loc_title = '<?php the_title(); ?>';
-                var office_lat = <?php echo get_field('map')['lat']; ?>; 
-                var office_lng = <?php echo get_field('map')['lng']; ?>; 
+                var office_lat = <?php echo get_field('map_location')['lat']; ?>; 
+                var office_lng = <?php echo get_field('map_location')['lng']; ?>; 
 
              loc_content = '<div id='mapInfo".get_the_ID()."'>';";
              loc_content += '' +loc_title+ '';";
