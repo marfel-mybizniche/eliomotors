@@ -6,13 +6,11 @@ function mbn_shortcode_home_url($atts = null, $content = null){
 add_shortcode('home_url', 'mbn_shortcode_home_url');
 
 
-// Find Us Location, Map
 function find_us_gmap() { 
-    wp_reset_query();
+
     $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
     $locLoop = new WP_Query( $locArgs ); 
     $postvar = "";
-
     $postvar .='<div class="location_map">';
     $postvar .='<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>';
     $postvar .='<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDac2mOtJr_IktjUhiLZYRL_xHzxRbodRE&callback=initMap&libraries=&v=weekly" defer></script>';
@@ -110,11 +108,10 @@ $postvar   .= '<ul class="location_states">';
                 $postvar   .= '</li>';
         }
 
-    ?>
+   
     $postvar   .= '</ul>';
 
-    <?php 
-     return $postvar;
+    return $postvar;
     }
 add_shortcode('display_locations_gmap', 'find_us_gmap');
 
