@@ -39,7 +39,7 @@ function find_us_gmap() {
             $postvar .=" array_holder = [loc_title, office_lat, office_lng, loc_content];
             locations.push(array_holder);
             loc_ctr = loc_ctr+1; ";
-            
+            $arrID[] = get_the_ID() ;
             endif;   
         endwhile; 
         wp_reset_postdata();
@@ -85,7 +85,7 @@ function find_us_gmap() {
         $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
         foreach ( $location_categories as $location_category ) {
             $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )
-                ), 'post_type' => 'location', 'orderby' => 'title,');
+                ), 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
             $locations = new WP_Query( $args ); 
             $locCtr = 0;
             
