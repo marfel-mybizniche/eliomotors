@@ -7,10 +7,8 @@ add_shortcode('home_url', 'mbn_shortcode_home_url');
 
 
 function find_us_gmap() { 
-    $locCatArgs = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-    foreach ( $locCatArgs as $locCat ) {
-    $locArgs = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $locCat->slug, 'include_children' => false )), 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
-    //$locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
+
+    $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
     $locLoop = new WP_Query( $locArgs ); 
     $postvar = "";
     $postvar .='<div class="location_map">';
@@ -80,14 +78,14 @@ function find_us_gmap() {
         });
      
     }</script> ";
-    }
     
     $postvar   .= '<div id="gmap" style="height:100vh"></div>'; 
     $postvar   .= '</div>';
     $postvar   .= '<ul class="location_states">';
         $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
         foreach ( $location_categories as $location_category ) {
-            $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )), 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
+            $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )
+                ), 'post_type' => 'location', 'orderby' => 'title,');
             $locations = new WP_Query( $args ); 
             $locCtr = 0;
             
