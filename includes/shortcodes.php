@@ -103,7 +103,7 @@ function find_us_gmap(){
                 google.maps.event.trigger(markers_array[i], 'click');
             });
         });
-    
+     
     
     }</script>
     <div id="map" style="height:100vh"></div>
