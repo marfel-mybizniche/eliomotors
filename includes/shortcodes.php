@@ -19,7 +19,7 @@ function find_us_gmap() {
 
     $postvar .="<script>function initMap() {
         const myLatlng = { lat: 34.750713, lng: -111.263263 };
-        const map = new google.maps.Map(document.getElementById("gmap"), {
+        const map = new google.maps.Map(document.getElementById('gmap'), {
             zoom: 8,
             center: myLatlng,
         });
