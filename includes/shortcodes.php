@@ -102,7 +102,7 @@ $postvar   .= '<ul class="location_states">';
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
-                    $postvar   .= '<a href="#">'.get_the_title().'</a>';
+                    $postvar   .= '<a href="#map" class="triggerMap triggerMap'.get_the_ID().'" data-smooth-scroll="">'.get_the_title().'</a>';
                 }
                 $postvar   .= '</ul>';
                 $postvar   .= '</li>';
