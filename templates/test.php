@@ -6,7 +6,7 @@ get_header(); ?>
 
 
 
-    <?= do_shortcode('[display_loc_gmap]'); ?>
+    <?= do_shortcode('[display_locations_gmap]'); ?>
 
 
 

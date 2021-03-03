@@ -122,7 +122,7 @@ function find_us_gmap() {
 
     <?php 
     }
-add_shortcode('display_loc_gmap', 'find_us_gmap');
+add_shortcode('display_locations_gmap', 'find_us_gmap');
 
 
 
