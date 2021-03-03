@@ -176,10 +176,10 @@ function my_acf_blocks_init() {
             'example'  => array(
                 'attributes' => array(
                     'mode' => 'preview',
-                    'data' => array(
-                      'testimonial'   => "Your testimonial text here",
-                      'author'        => "John Smith"
-                    )
+                    // 'data' => array(
+                    //   'testimonial'   => "Your testimonial text here",
+                    //   'author'        => "John Smith"
+                    // )
                 )
             )
         ));
