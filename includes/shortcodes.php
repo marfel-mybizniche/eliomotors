@@ -97,7 +97,7 @@ function find_us_gmap() {
             $loc_content = "";    
             echo '<li class="state_item '. $location_category->slug .'">';
             echo '<h6 class="state_name">'. $location_category->name .'</h6>';
-                echo '<ul class='location_list'>';
+                echo '<ul class="location_list">';
                 while ( $locations->have_posts() ) { $locations->the_post();
 
                     ?>
