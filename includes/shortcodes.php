@@ -10,7 +10,10 @@ add_shortcode('home_url', 'mbn_shortcode_home_url');
 function find_us_gmap() { 
     wp_reset_query();
     $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
-    $locLoop = new WP_Query( $locArgs ); ?>
+    $locLoop = new WP_Query( $locArgs ); 
+    $postvar = "";
+    ?>
+    
     <div class="location_map">
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -83,44 +86,37 @@ function find_us_gmap() {
         });
      
     }</script>
-    <div id="gmap"></div>
-    </div>
+    
+    <?php $postvar   .= '<div id="gmap"></div>'; ?>
+    
+</div>
 
     <ul class="location_states">
     <?php
         $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-        $loc_content = "";
+  
         foreach ( $location_categories as $location_category ) {
             $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )
                 ), 'post_type' => 'location', 'orderby' => 'title,');
             $locations = new WP_Query( $args ); 
-            $loc_content = "";    
-            echo '<li class="state_item '. $location_category->slug .'">';
-            echo '<h6 class="state_name">'. $location_category->name .'</h6>';
-                echo '<ul class="location_list">';
-                while ( $locations->have_posts() ) { $locations->the_post();
-
-                    ?>
-                    <li class="city_item">
-                        <a href="#"><?php the_title(); ?></a>
-                    </li>
-                    <?php
+            
+            $postvar   .= '<li class="state_item '. $location_category->slug .'">';
+            $postvar   .= '<h6 class="state_name">'. $location_category->name .'</h6>';
+            $postvar   .= '<ul class="location_list">';
+                while ( $locations->have_posts() ) { 
+                    $locations->the_post();
+                    $postvar   .= '<li class="city_item">';
+                    $postvar   .= '<a href="#">'.get_the_title().'</a>';
                 }
-                echo '</ul>';
-            echo '</li>';
-
+                $postvar   .= '</ul>';
+                $postvar   .= '</li>';
         }
 
-        return $loc_content;
     ?>
     </ul>
 
-    <p class="note">
-        <strong>NOTE:</strong> 
-        The map and cities below show the general geographic locations for the retail stores. Exact locations will be determined at a later date.
-    </p>
-
     <?php 
+     return $postvar;
     }
 add_shortcode('display_locations_gmap', 'find_us_gmap');
 
