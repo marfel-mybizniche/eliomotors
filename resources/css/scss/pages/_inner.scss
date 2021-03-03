@@ -398,17 +398,49 @@
 
 
 // Find Us page
-
 .sec_find_loc {
     background: $color-light;
+    padding: 0 0 80px;
  
     .wp-block-group__inner-container {
         max-width: none;
     }
 
+    .location_map {}
+
+    ul.location_states {
+        margin: 0;
+        padding:50px 0 0;
+
+        li {
+            list-style: none;
+            display: inline-block;    
+            font:16px $font-rajdhani;   
+            
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        ul {
+
+            li {
+                display: block;
+                font-weight: 400;
+            }
+        }
+    }   
     
+    .note {
+        font-size: 14px;
+        color: $color-primary;
+        text-align: center;
+    }
 
 }
+
+
 
 
 // 404 Page
