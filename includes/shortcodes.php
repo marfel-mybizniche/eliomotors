@@ -95,9 +95,9 @@ function find_us_gmap() {
                 ), 'post_type' => 'location', 'orderby' => 'title,');
             $locations = new WP_Query( $args ); 
             $loc_content = "";    
-            $loc_content .= '<li class="state_item '. $location_category->slug .'">';
-            $loc_content .= '<h6 class="state_name">'. $location_category->name .'</h6>';
-                $loc_content .= "<ul class='location_list'>";
+            echo '<li class="state_item '. $location_category->slug .'">';
+            echo '<h6 class="state_name">'. $location_category->name .'</h6>';
+                echo '<ul class='location_list'>';
                 while ( $locations->have_posts() ) { $locations->the_post();
 
                     ?>
@@ -106,8 +106,8 @@ function find_us_gmap() {
                     </li>
                     <?php
                 }
-                $loc_content .= "</ul>";
-            $loc_content .= "</li>";
+                echo '</ul>';
+            echo '</li>';
 
         }
 
