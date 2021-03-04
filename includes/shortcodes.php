@@ -18,7 +18,7 @@ function find_us_gmap() {
     $postvar .="<script>function initMap() {
         const myLatlng = { lat: 34.750713, lng: -111.263263 };
         const map = new google.maps.Map(document.getElementById('gmap'), {
-            zoom: 4,
+            zoom: 5.5,
             center: myLatlng,
             styles: [{'featureType': 'administrative','elementType': 'all','stylers': [{'saturation': '-100'}]},
             {'featureType': 'administrative.province', 'elementType': 'all','stylers': [ {'visibility': 'off'}]},
@@ -78,7 +78,7 @@ function find_us_gmap() {
         map.fitBounds(bounds);
       
         var listener = google.maps.event.addListener(map, 'idle', function () {
-            map.setZoom(4);
+            map.setZoom(5.5);
             google.maps.event.removeListener(listener);
         });
     
