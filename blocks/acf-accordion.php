@@ -35,9 +35,9 @@ if( !empty($block['align']) ) {
 			<a href="#" class="accordion-title"><?php the_sub_field('heading'); ?></a>
             
 			<div class="accordion-content" data-tab-content>
-                <?php if(!empty(get_sub_field('media_img'))) { ?>
-			    <img class="<?php the_sub_field('media_align'); ?>" src="<?php get_sub_field('media_img')['url']; ?>" alt="">
-                <?php } ?>
+                <?php //if(!empty(get_sub_field('media_img'))) { ?>
+			    <img class="<?php the_sub_field('media_align'); ?>" src="<?php echo get_sub_field('media_img')['url']; ?>" alt="">
+                <?php //} ?>
 			    <?php the_sub_field('content'); ?>
 			</div>
         </li>
