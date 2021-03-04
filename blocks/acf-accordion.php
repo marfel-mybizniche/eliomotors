@@ -36,7 +36,7 @@ if( !empty($block['align']) ) {
             
 			<div class="accordion-content" data-tab-content>
                 <?php //if(!empty(get_sub_field('media_img'))) { ?>
-			    <img class="<?php the_sub_field('media_align'); ?>" src="<?php echo get_sub_field('media_img')['url']; ?>" alt="">
+			    <img class="<?php the_sub_field('media_align'); ?>" src="<?php echo get_field('accordion_items_media_img')['url']; ?>" alt="">
                 <?php //} ?>
 			    <?php the_sub_field('content'); ?>
 			</div>
