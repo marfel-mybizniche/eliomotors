@@ -404,13 +404,14 @@
  
     .wp-block-group__inner-container {
         max-width: none;
+        padding:0;
     }
 
     .location_map {}
 
     ul.location_states {
         margin: 0;
-        padding:50px 0 0;
+        padding:50px 50px 0;
 
         li {
             list-style: none;
@@ -424,10 +425,22 @@
         }
 
         ul {
+            margin:0;
+            padding:0;
 
             li {
                 display: block;
                 font-weight: 400; 
+
+                a {
+                    color: $color-dark;
+                    display: block;
+                    padding: 3px 0;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
             }
         }
     }   
