@@ -27,7 +27,37 @@
             $('.location_states').slick({
                 //infinite: true,
                 slidesToShow: 7,
-                slidesToScroll: 7
+                slidesToScroll: 7,
+                responsive: [
+                    {
+                      breakpoint: 1366,
+                      settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 6
+                      }
+                    },
+                    {
+                      breakpoint: 1023,
+                      settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5
+                      }
+                    },
+                    {
+                      breakpoint: 769,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                      }
+                    }
+                  ]
             });
 
         }
