@@ -30,14 +30,14 @@
                 slidesToScroll: 7,
                 responsive: [
                     {
-                      breakpoint: 1366,
+                      breakpoint: 1367,
                       settings: {
                         slidesToShow: 6,
                         slidesToScroll: 6
                       }
                     },
                     {
-                      breakpoint: 1023,
+                      breakpoint: 1200,
                       settings: {
                         slidesToShow: 5,
                         slidesToScroll: 5
@@ -51,7 +51,7 @@
                       }
                     },
                     {
-                      breakpoint: 480,
+                      breakpoint: 481,
                       settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2
