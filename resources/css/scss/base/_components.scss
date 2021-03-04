@@ -404,7 +404,7 @@ ul.check-list, ul.check_list {
 		border-bottom: 1px solid $color-light;
 	}
 
-	&.is-active {
+	.is-active {
 		.accordion-title {
 			background: $color-light;
 		}

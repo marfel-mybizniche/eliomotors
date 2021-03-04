@@ -414,6 +414,13 @@
             position: relative;
             overflow: hidden;
         }
+
+        .mapinfo {
+            padding:5px 10px;
+        }
+        .gm-ui-hover-effect {
+            margin: 3px !important;
+        }
     }
 
     ul.location_states {
@@ -432,7 +439,7 @@
         }
 
         ul {
-            margin:0;
+            margin:0 0 30px;
             padding:0;
 
             li {
@@ -450,6 +457,21 @@
                 }
             }
         }
+
+        .slick-arrow {
+            top: 40%;
+            border-radius: 0;
+
+            &.slick-prev {
+                left: auto;
+                right: 0;
+                top: calc(40% + 35px);
+            }
+
+            &.slick-next {
+                right: 0;
+            }
+        }
     }   
     
     .note {
@@ -464,7 +486,7 @@
     padding: 70px 0;
 
     h2 {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     .mbn-accordion {
@@ -490,9 +512,15 @@
     background: $color-light;
     padding: 70px 0;
 
+    .contact_int {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
     .contact_box {
         background: $color-white;
         padding: 45px;
+        margin-bottom: 30px;
     }
 }
 
