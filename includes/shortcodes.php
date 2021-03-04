@@ -18,7 +18,7 @@ function find_us_gmap() {
     $postvar .="<script>function initMap() {
         const myLatlng = { lat: 34.750713, lng: -111.263263 };
         const map = new google.maps.Map(document.getElementById('gmap'), {
-            zoom: 5,
+            zoom: 4,
             center: myLatlng,
             styles: [{'featureType': 'administrative','elementType': 'all','stylers': [{'saturation': '-100'}]},
             {'featureType': 'administrative.province', 'elementType': 'all','stylers': [ {'visibility': 'off'}]},
@@ -59,7 +59,7 @@ function find_us_gmap() {
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map,
-            icon: '".MBN_ASSETS_URI."/img/icon/gmap-pointer.svg',
+            icon: '".MBN_ASSETS_URI."/img/gmap-pointer.png',
           });
     
            bounds.extend(marker.position);
