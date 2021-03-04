@@ -555,6 +555,12 @@
         padding: 45px;
         margin-bottom: 30px;
     }
+
+    @media (max-width: 639px) {
+        .contact_box {
+            padding: 30px;
+        }
+    }
 }
 
 

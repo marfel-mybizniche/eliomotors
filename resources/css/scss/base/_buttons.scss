@@ -255,12 +255,13 @@
     font-weight: 600;
     font-family: $font-rajdhani;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     line-height: 28px;
     letter-spacing: 1.5px;
     border-radius: 0;
     min-width: 210px;
     transition: all 1s ease;
+    text-align: center;
 
     &:hover {
         background: $color-primary;
