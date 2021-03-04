@@ -100,7 +100,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sec_board_members">
+    <section class="sec_board_members" id="board-members">
         <div class="grid-container">
 
             <div class="grid-x grid-margin-x">
