@@ -461,6 +461,8 @@
         .slick-arrow {
             top: 40%;
             border-radius: 0;
+            z-index: 10;
+            transform: none;
 
             &.slick-prev {
                 left: auto;
@@ -478,6 +480,37 @@
         font-size: 14px;
         color: $color-primary;
         text-align: center;
+    }
+
+    @media (max-width: 1023px) {
+        ul.location_states {
+            padding-right: 0;
+
+            .slick-arrow {
+                top:0;
+
+                &.slick-prev {
+                    left: auto;
+                    right: 45px;
+                    top: 0;
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 639px) {
+        ul.location_states {
+            padding-left: 50px;
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 375px) {
+        ul.location_states {
+            padding-left: 30px;
+            padding-right: 0;
+        }
     }
 
 }
