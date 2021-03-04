@@ -27,7 +27,7 @@
             $('.location_states').slick({
                 //infinite: true,
                 slidesToShow: 7,
-                slidesToScroll: 1
+                slidesToScroll: 7
             });
 
         }
