@@ -471,6 +471,7 @@
                 border-bottom-color: transparent;
                 width: 11px;
                 height: 11px;
+                display: inline-block;
             }
 
             &.slick-prev {
@@ -480,6 +481,7 @@
 
                 &:before {
                     transform: rotate(225deg);
+                    margin: 0 0 0 5px;
                 }
             }
 
@@ -488,6 +490,7 @@
 
                 &:before {
                     transform: rotate(45deg);
+                    margin: 0 5px 0 0;
                 }
             }
         }

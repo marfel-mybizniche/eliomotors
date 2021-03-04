@@ -49,7 +49,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sec_how_elio">
+    <section class="sec_how_elio" id="how-it-all-began">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-10 large-offset-1 xlarge-7 xlarge-offset-2">
@@ -80,7 +80,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sec_elio_mission">
+    <section class="sec_elio_mission" id="vision-mission">
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell large-11 large-offset-1 xlarge-10 xlarge-offset-2">

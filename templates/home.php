@@ -165,11 +165,12 @@ get_header(); ?>
 
     <section class="sec_features">
         <div class="grid-container">
-
+            
+            <?php /*
             <div class="preview" data-aos="zoom-in-up" data-aos-offset="300">
                 <a class="btn-play" href="<?php echo MBN_ASSETS_URI; ?>/video/Elio-Hero.mp4" data-fancybox><img src="<?php echo MBN_ASSETS_URI; ?>/img/featured-video.jpg" alt=""></a>
             </div>
-
+            */ ?>                   
             <div class="grid-x grid-margin-x">
                 <div class="cell large-6 copy">
                     <ul class="list">
@@ -206,7 +207,11 @@ get_header(); ?>
 
     <section class="sec_newsletter" data-aos="fade-up" data-aos-offset="300">
         <div class="bg">
-            <img src="<?php echo MBN_ASSETS_URI; ?>/img/img-video-placeholder.jpg" alt="">
+            <!-- <img src="<?php echo MBN_ASSETS_URI; ?>/img/img-video-placeholder.jpg" alt=""> -->
+            <video poster="<?php echo MBN_ASSETS_URI; ?>/img/img-video-placeholder.jpg" autoplay loop muted playsinline>
+                <source src="<?php echo MBN_ASSETS_URI; ?>/video/Elio-Reservation.mp4" type="video/mp4" />
+                <p>Your browser cannot support .mp4 file</p>
+            </video>
         </div>
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
