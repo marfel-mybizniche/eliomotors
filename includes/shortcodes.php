@@ -79,7 +79,7 @@ function find_us_gmap() {
      
     }</script> ";
     
-    $postvar   .= '<div id="gmap" style="height:100vh"></div>'; 
+    $postvar   .= '<div id="gmap"></div>'; 
     $postvar   .= '</div>';
     $postvar   .= '<ul class="location_states">';
         $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));

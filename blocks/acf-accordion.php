@@ -16,7 +16,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'accordion';
+$className = 'mbn-accordion';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -35,9 +35,10 @@ if( !empty($block['align']) ) {
 			<a href="#" class="accordion-title"><?php the_sub_field('heading'); ?></a>
             
 			<div class="accordion-content" data-tab-content>
-                <?php if( have_rows('media') ): while( have_rows('media') ) : the_row(); ?>
+                <?php if( have_rows('media') ): while( have_rows('media') ) : the_row();
+                    if(!empty(sub_field('img'))) { ?>
                     <img class="<?php the_sub_field('align'); ?>" src="<?php the_sub_field('img'); ?>" alt="">
-                <?php endwhile; endif;  ?>
+                <?php } endwhile; endif;  ?>
 
 			    <?php the_sub_field('content'); ?>
 			</div>

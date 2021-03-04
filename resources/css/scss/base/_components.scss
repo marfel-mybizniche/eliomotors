@@ -394,10 +394,26 @@ ul.check-list, ul.check_list {
 			.icon, .wp-block-media-text__media {
 				max-width: 85px;
 			}
-	
 		}
+	}
+}
 
+
+.mbn-accordion {
+	.accordion-item {
+		border-bottom: 1px solid $color-light;
+	}
+	.accordion-title {
+		font: bold 16px $font-rajdhani;
+		color: $color-dark;
+		border: 0;
+		padding: 15px 10px
 	}
 
-
+	.accordion-content {
+		padding: 0;
+		border: 0;
+	}
 }
+
+
