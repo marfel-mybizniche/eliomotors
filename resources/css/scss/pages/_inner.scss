@@ -464,14 +464,31 @@
             z-index: 10;
             transform: none;
 
+            &:before {
+                content: '';
+                border: 2px solid #888;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+                width: 11px;
+                height: 11px;
+            }
+
             &.slick-prev {
                 left: auto;
                 right: 0;
                 top: calc(40% + 35px);
+
+                &:before {
+                    transform: rotate(225deg);
+                }
             }
 
             &.slick-next {
                 right: 0;
+
+                &:before {
+                    transform: rotate(45deg);
+                }
             }
         }
     }   

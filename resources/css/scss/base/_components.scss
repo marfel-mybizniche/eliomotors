@@ -406,7 +406,12 @@ ul.check-list, ul.check_list {
 
 	.is-active {
 		.accordion-title {
-			background: $color-light;
+			background: $color-light;;
+
+			&:before {
+				content: '';
+				transform: rotate(-45deg);
+			}
 		}
 	}
 
@@ -414,7 +419,17 @@ ul.check-list, ul.check_list {
 		font: bold 16px $font-rajdhani;
 		color: $color-dark;
 		border: 0;
-		padding: 15px 10px
+		padding: 15px 10px;
+
+		&:before {
+			content: '';
+			border: 2px solid #888;
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+			width: 11px;
+			height: 11px;
+			transform: rotate(135deg);
+		}
 	}
 
 	.accordion-content {
