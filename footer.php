@@ -4,62 +4,14 @@
 <footer id="footer">
 	<div class="grid-container">
 		<div class="foot_menu">
-			<ul class="grid-x grid-margin-x">
-				<li class="cell medium-4 large-2">
-					<a>Information</a>
-					<ul>
-						<li><a href="#">Terms and Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Careers</a></li>
-					</ul>
-				</li>
-				<li class="cell medium-4 large-2"> 
-					<a>Elio Motors</a>
-					<ul>
-						<li><a href="#">How It All Began</a></li>
-						<li><a href="#">Why Elio?</a></li>
-						<li><a href="#">How Is targeted $7,450* Possible?</a></li>
-						<li><a href="#">Vision / Mission</a></li>
-						<li><a href="#">Suppliers Network</a></li>
-						<li><a href="#">Board Members</a></li>
-					</ul>
-				</li>
-				<li class="cell medium-4 large-2">
-					<a>Features</a>
-					<ul>
-						<li><a href="#">The 4 Must Haves</a></li>
-						<li><a href="#">Green Impact and Economics</a></li>
-						<li><a href="#">Colors</a></li>
-						<li><a href="#">Customization</a></li>
-						<li><a href="#">Savings Calculator</a></li>
-					</ul>
-				</li>
-				<li class="cell medium-4 large-2">
-					<a>Find Us</a>
-					<ul>
-						<li><a href="#">Tour Events</a></li>
-						<li><a href="#">Retail Centers</a></li>
-						<li><a href="#">Service Centers</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</li>
-				<li class="cell medium-4 large-2">
-					<a>Gallery</a>
-					<ul>
-						<li><a href="#">Videos</a></li>
-						<li><a href="#">Images</a></li>
-					</ul>
-				</li>
-				<li class="cell medium-4 large-2">
-					<a>Blog</a>
-					<ul>
-						<li><a href="#">Media</a></li>
-						<li><a href="#">Fleet</a></li>
-						<li><a href="#">Elio Wear</a></li>
-					</ul>
-				</li>
-			</ul>
+			<?php
+				wp_nav_menu( array( 
+					'theme_location' => 'footer-menu',
+					'menu'       => '',
+					'container'  => '',
+					'items_wrap' => '<ul class="grid-x grid-margin-x">%3$s</ul>' 
+				));
+			?>
 		</div>
 		<hr class="foot_hr">
 		<div class="foot_info">
