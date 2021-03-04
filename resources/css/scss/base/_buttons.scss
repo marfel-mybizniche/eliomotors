@@ -245,3 +245,24 @@
     }
 
 }
+
+.wp-block-button__link {
+    background-color: linear-gradient(114deg, $color-primary 7%, $color-success 95%);
+    color: $color-white;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-rajdhani;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    min-width: 210px;
+    color: $color-light;
+    transition: all 1s ease;
+
+    &:hover {
+        background: $color-primary;
+    }
+}

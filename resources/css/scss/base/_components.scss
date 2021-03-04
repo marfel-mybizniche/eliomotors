@@ -403,6 +403,13 @@ ul.check-list, ul.check_list {
 	.accordion-item {
 		border-bottom: 1px solid $color-light;
 	}
+
+	&.is-active {
+		.accordion-title {
+			background: $color-light;
+		}
+	}
+
 	.accordion-title {
 		font: bold 16px $font-rajdhani;
 		color: $color-dark;
@@ -411,7 +418,7 @@ ul.check-list, ul.check_list {
 	}
 
 	.accordion-content {
-		padding: 0;
+		padding: 10px;
 		border: 0;
 	}
 }
