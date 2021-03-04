@@ -58,7 +58,8 @@ function find_us_gmap() {
         $postvar .="  for (var i = 0; i < locations.length; i++) {
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map
+            map: map,
+            icon: ".MBN_ASSETS_URI."/img/icon/gmap-pointer.svg',
           });
     
            bounds.extend(marker.position);
