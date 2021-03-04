@@ -36,7 +36,7 @@ if( !empty($block['align']) ) {
             
 			<div class="accordion-content" data-tab-content>
                 <?php if( have_rows('media') ): while( have_rows('media') ) : the_row();
-                    if(!empty(sub_field('img'))) { ?>
+                    if(!empty(get_sub_field('img'))) { ?>
                     <img class="<?php the_sub_field('align'); ?>" src="<?php the_sub_field('img'); ?>" alt="">
                 <?php } endwhile; endif;  ?>
 
