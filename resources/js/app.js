@@ -25,7 +25,7 @@
             });
 
             $('.location_states').slick({
-                //infinite: true,
+                infinite: false,
                 slidesToShow: 7,
                 slidesToScroll: 7,
                 responsive: [
