@@ -584,6 +584,10 @@
     background: $color-light;
     padding: 70px 0;
 
+    h6 {
+        color: $color-primary;
+    }
+
     .contact_int {
         margin-bottom: 50px;
         text-align: center;
@@ -593,6 +597,14 @@
         background: $color-white;
         padding: 45px;
         margin-bottom: 30px;
+
+        a {
+            font-weight: 500;
+        }
+        .wp-block-button__link,
+        .button {
+            font-weight: 600;
+        }
     }
 
     @media (max-width: 639px) {

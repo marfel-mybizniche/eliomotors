@@ -60,6 +60,20 @@
                   ]
             });
 
+            
+            $('.popup_btn > a, a.popup_btn').click(function(){
+              if($(this).attr('href') == '#'+$('.popup_wrap').attr('id')) {
+                $('.popup_wrap').addClass('show');
+                $('body').addClass('popup-active');
+              }
+              return false;
+            });
+            $('.popup_box').append('<span class="pop_close" />');
+            $('.pop_close').click(function(){
+              $('.popup_wrap').removeClass('show');
+              $('body').removeClass('popup-active');
+            });
+
         }
         
         

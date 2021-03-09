@@ -438,4 +438,47 @@ ul.check-list, ul.check_list {
 	}
 }
 
+.popup_wrap {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba($color-black, 0.8);
+	display: none;
+	overflow: scroll;
+	transition:all 0.5s ease;
+	opacity: 0;
+	z-index: 99999;
+
+	&.show {
+		display: block;
+		opacity: 1;
+	}
+
+	.popup_box {
+		background: $color-white;
+		padding: 45px;
+		width: 690px;
+		max-width: 100%;
+		margin: 0 auto;
+		max-height: 100vh;
+		overflow: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.pop_close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 20px;
+		height: 20px;
+		background: url(../img/icon/close.svg) no-repeat center;
+		z-index: 10;
+		cursor: pointer;
+	}
+}
 

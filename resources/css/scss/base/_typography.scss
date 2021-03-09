@@ -13,6 +13,10 @@ body{
     color: $color-dark;
     font-weight: 300;
     overflow-x: hidden;
+
+    &.popup-active {
+       overflow: hidden;
+    }
 }
 
 
