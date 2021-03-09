@@ -123,7 +123,7 @@ function find_us_gmap() {
     $postvar   .= '</ul>';
     
     $postvar   .= '<div style="display:none">';
-        while ( $locations->have_posts() ) : $locations->the_post();  
+        while ( $locLoop->have_posts() ) : $locLoop->the_post();  
             if(!empty(get_field('map_location'))): 
                 $postvar   .= '<a href="#gmap" class="triggerMap" data-smooth-scroll="">'.get_the_title().'</a>';
             endif;   
