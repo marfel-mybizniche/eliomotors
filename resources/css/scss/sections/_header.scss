@@ -226,21 +226,27 @@
 			@include media(max-width, 1440px) {
 				.navmenu {
 					a {
-						padding-left: 20px;
-						padding-right: 20px;
+						padding-left: 15px;
+						padding-right: 15px;
 					}
 				}
 			}
 						
 			@include media(max-width, 1366px) {
 				.navmenu {
-					padding: 0;
-					margin: 0;
-					clear: both;
+
+					.is-dropdown-submenu-parent > a {
+						padding-right: 30px;
+					}
 				}
 				
 				.navutil {
 					min-height: 1px;
+					
+					.button {
+						padding: 8px 15px;
+						min-width: 180px;
+					}
 				}
 			}
 

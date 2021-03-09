@@ -10,16 +10,26 @@
 
     .banner_images {
         overflow: hidden;
+        
         ul {
             display: flex;
-            margin: 0 -100px;
+            margin: 0 -6%;
+            align-items: center;
 
             li {
                 list-style: none;
                 padding: 0 50px;
-                width: 33.333%;
+                width: 32%;
                 text-align: center;
+
+                &:nth-child(2) {
+                    width: 38%;
+                }
             } 
+        }
+
+        &.full {
+            margin: -50px calc((-105vw - #{-$grid-container}) / 2) 50px;
         }
     }
 
@@ -63,11 +73,15 @@
 .sec_why_elio {
     position: relative;
     background:$color-dark url(../img/bg-why-elio.jpg) no-repeat center bottom / cover;
-    padding: 8% 0 35%;
+    padding: 8% 0 40%;
     color: $color-white;
 
     h2 {
         font-size: 62px;
+    }
+
+    h4 {
+        font-size: 24px;
     }
 
     .copy {
@@ -227,6 +241,11 @@
         .logo {
             float: right;
             margin-left: 50px;
+            width: 208px;
+
+            img {
+                width: 100%;
+            }
         }
     }  
 

@@ -213,11 +213,12 @@ blockquote {
             display: none;
         }
 
-        small {
+        small, s {
             font: 300 16px  $body-font-family;
             display: block;
             color: $color-lgrey;
             text-transform: none;
+            text-decoration: none;
         }
 
     }
