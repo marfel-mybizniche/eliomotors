@@ -95,16 +95,15 @@ function find_us_gmap() {
     $postvar   .= '<div id="gmap"></div>'; 
     $postvar   .= '</div>';
     $postvar   .= '<ul class="location_states">';
-        $location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-        foreach ( $location_categories as $location_category ) {
-            $args = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )
-                ), 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
+        //$location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
+       // foreach ( $location_categories as $location_category ) {
+            $args = array('posts_per_page' => -1, 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
             $locations = new WP_Query( $args ); 
             $locCtr = 0;
             
-            $postvar   .= '<li class="state_item '. $location_category->slug .'">';
-            $postvar   .= '<h6 class="state_name">'. $location_category->name .'</h6>';
-            $postvar   .= '<ul class="location_list">';
+            //$postvar   .= '<li class="state_item '. $location_category->slug .'">';
+           // $postvar   .= '<h6 class="state_name">'. $location_category->name .'</h6>';
+            //$postvar   .= '<ul class="location_list">';
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
@@ -112,8 +111,8 @@ function find_us_gmap() {
                     $postvar   .= '</li>';
                     
                 }
-                $postvar   .= '</ul>';
-                $postvar   .= '</li>';
+                //$postvar   .= '</ul>';
+                //$postvar   .= '</li>';
                 $locCtr++; 
         }
 
