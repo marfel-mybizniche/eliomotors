@@ -114,7 +114,7 @@ function find_us_gmap() {
                 //$postvar   .= '</ul>';
                 //$postvar   .= '</li>';
                 $locCtr++; 
-        }
+       // }
 
    
     $postvar   .= '</ul>';
