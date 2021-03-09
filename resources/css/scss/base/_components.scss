@@ -420,6 +420,7 @@ ul.check-list, ul.check_list {
 		color: $color-dark;
 		border: 0;
 		padding: 15px 10px;
+		text-transform: uppercase;
 
 		&:before {
 			content: '';
