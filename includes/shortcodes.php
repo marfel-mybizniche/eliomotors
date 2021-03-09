@@ -109,6 +109,7 @@ function find_us_gmap() {
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
                     $postvar   .= '<a href="#gmap" class="triggerMap triggerMap22 xtriggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
+                    $postvar   .= '</li>';
                     
                 }
                 $postvar   .= '</ul>';
