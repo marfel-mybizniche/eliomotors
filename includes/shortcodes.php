@@ -96,13 +96,15 @@ function find_us_gmap() {
     $postvar   .= '</div>';
     $postvar   .= '<ul class="location_states">';
         //$location_categories = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-       // foreach ( $location_categories as $location_category ) {
-            $args = array('posts_per_page' => -1, 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
-            $locations = new WP_Query( $args ); 
+        //foreach ( $location_categories as $location_category ) {
+            //$argsLoc2 = array('posts_per_page' => -1, 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category->slug, 'include_children' => false )), 'post_type' => 'location', 'orderby' => 'title,', 'order' => 'ASC');
+            
+            $argsLoc2 = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
+            $locations = new WP_Query( $argsLoc2 ); 
             $locCtr = 0;
             
             //$postvar   .= '<li class="state_item '. $location_category->slug .'">';
-           // $postvar   .= '<h6 class="state_name">'. $location_category->name .'</h6>';
+            //$postvar   .= '<h6 class="state_name">'. $location_category->name .'</h6>';
             //$postvar   .= '<ul class="location_list">';
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
@@ -114,7 +116,7 @@ function find_us_gmap() {
                 //$postvar   .= '</ul>';
                 //$postvar   .= '</li>';
                 $locCtr++; 
-       // }
+        //}
 
    
     $postvar   .= '</ul>';
