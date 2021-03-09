@@ -74,12 +74,7 @@
               $('body').removeClass('popup-active');
             });
 
-            $('.dummyClick').click(function(){
-              var getID = $(this).attr('href');
-              $('.triggerID'+getID).trigger('click');
-              console.log(getID);
-              return false;
-            });
+           
 
         }
         

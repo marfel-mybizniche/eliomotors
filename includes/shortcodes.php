@@ -130,6 +130,15 @@ function find_us_gmap() {
         endwhile; 
         wp_reset_postdata();
     $postvar   .= '</div>'; 
+    
+    $postvar .="<script>
+    $('.dummyClick').click(function(){
+        var getID = $(this).attr('href');
+        $('.triggerID'+getID).trigger('click');
+        //console.log(getID);
+        return false;
+      });
+    </script> ";
 
     return $postvar;
     }
