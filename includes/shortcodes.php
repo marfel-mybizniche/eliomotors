@@ -113,7 +113,7 @@ function find_us_gmap() {
                     $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
                     $postvar   .= '</li>';
                     
-                }
+                } wp_reset_postdata();
                 $postvar   .= '</ul>';
                 $postvar   .= '</li>';
                 $locCtr++; 
@@ -122,6 +122,14 @@ function find_us_gmap() {
    
     $postvar   .= '</ul>';
 
+    $postvar   .= '<div style="display:none">';
+        while ( $locLoop->have_posts() ) : $locLoop->the_post();  
+            if(!empty(get_field('map_location'))): 
+                $postvar   .= '<a href="#gmap" class="triggerMap" data-smooth-scroll="">'.get_the_title().'</a>';
+            endif;   
+        endwhile; 
+        wp_reset_postdata();
+    $postvar   .= '</div>';    
     return $postvar;
     }
 add_shortcode('display_locations_gmap', 'find_us_gmap');
