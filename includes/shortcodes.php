@@ -45,7 +45,7 @@ function find_us_gmap() {
             //$postvar .=" var loc_id = " .get_the_ID(). ";";
             $postvar .=" var office_lat = " .get_field('map_location')['lat'].";";
             $postvar .=" var office_lng = " .get_field('map_location')['lng'].";";
-            $postvar .=" loc_content = '<div class=mapinfo id=mapInfo'+loc_ctr+'>';";
+            $postvar .=" loc_content = '<div class=mapinfo id=mapInfo>';";
             $postvar .=" loc_content += '' +loc_title+ '';";
             $postvar .=" loc_content += '</div>';";
             $postvar .=" array_holder = [loc_title, office_lat, office_lng, loc_content];
