@@ -109,8 +109,8 @@ function find_us_gmap() {
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
-                    $postvar   .= ''.get_the_title().'';
-                   // $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
+                    //$postvar   .= ''.get_the_title().'';
+                    $postvar   .= '<a href="#'.get_the_ID().'" class="xtriggerMap xtriggerMap'.$locCtr.'" data-xsmooth-scroll="">'.get_the_title().'</a>';
                     $postvar   .= '</li>';
                     
                 }
@@ -122,10 +122,10 @@ function find_us_gmap() {
    
     $postvar   .= '</ul>';
     
-    $postvar   .= '<div style="display:none">';
+    $postvar   .= '<div class="triggerClick" style="display:none">';
         while ( $locLoop->have_posts() ) : $locLoop->the_post();  
             if(!empty(get_field('map_location'))): 
-                $postvar   .= '<a href="#gmap" class="triggerMap" data-smooth-scroll="">'.get_the_title().'</a>';
+                $postvar   .= '<a href="#gmap" class="triggerMap triggerID'.get_the_ID().'" data-smooth-scroll="">'.get_the_title().'</a>';
             endif;   
         endwhile; 
         wp_reset_postdata();
