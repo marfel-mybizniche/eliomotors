@@ -7,8 +7,13 @@ add_shortcode('home_url', 'mbn_shortcode_home_url');
 
 
 function find_us_gmap() { 
+    
+    $postvar   .= '<ul class="location_states">';
+    $location_categories1 = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
+    foreach ( $location_categories1 as $location_category1 ) {
 
-    $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
+    //$locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
+    $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC', 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category1->slug, 'include_children' => false )));
     $locLoop = new WP_Query( $locArgs ); 
     $postvar = "";
     $postvar .='<div class="location_map">';
@@ -53,9 +58,9 @@ function find_us_gmap() {
             loc_ctr = loc_ctr+1; ";
             $arrID[] = get_the_ID() ;
             endif;   
-        endwhile; 
-        wp_reset_postdata();
-        
+        endwhile; wp_reset_postdata();
+
+        }
         $postvar .="  for (var i = 0; i < locations.length; i++) {
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
