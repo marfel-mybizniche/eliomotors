@@ -8,15 +8,9 @@ add_shortcode('home_url', 'mbn_shortcode_home_url');
 
 function find_us_gmap() { 
     
-    $postvar = "";
-    
-    $location_categories1 = get_terms( 'locations-cat', array('orderby' => 'title', 'order' => 'ASC', 'parent' => 0, 'hide_empty' => true));
-    foreach ( $location_categories1 as $location_category1 ) {
-
-    //$locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
-    $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC', 'tax_query' => array( 'relation' => 'AND', array( 'taxonomy' => 'locations-cat', 'field' => 'slug', 'terms' => $location_category1->slug, 'include_children' => false )));
+    $locArgs = array('post_type' => 'location', 'posts_per_page' => -1, 'post_status' => 'publish','orderby' => 'title', 'order' => 'ASC');
     $locLoop = new WP_Query( $locArgs ); 
-   
+    $postvar = "";
     $postvar .='<div class="location_map">';
     $postvar .='<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>';
     $postvar .='<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDac2mOtJr_IktjUhiLZYRL_xHzxRbodRE&callback=initMap&libraries=&v=weekly" defer></script>';
@@ -59,9 +53,9 @@ function find_us_gmap() {
             loc_ctr = loc_ctr+1; ";
             $arrID[] = get_the_ID() ;
             endif;   
-        endwhile; wp_reset_postdata();
-
-        }
+        endwhile; 
+        wp_reset_postdata();
+        
         $postvar .="  for (var i = 0; i < locations.length; i++) {
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -115,7 +109,8 @@ function find_us_gmap() {
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
-                    $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
+                    $postvar   .= ''.get_the_title().'';
+                   // $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
                     $postvar   .= '</li>';
                     
                 }
