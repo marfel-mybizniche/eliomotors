@@ -110,7 +110,7 @@ function find_us_gmap() {
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
                     //$postvar   .= ''.get_the_title().'';
-                    $postvar   .= '<a href="#'.get_the_ID().'" class="xtriggerMap xtriggerMap'.$locCtr.'" data-xsmooth-scroll="">'.get_the_title().'</a>';
+                    $postvar   .= '<a href="'.get_the_ID().'" class="dummyClick xtriggerMap'.$locCtr.'" data-xsmooth-scroll="">'.get_the_title().'</a>';
                     $postvar   .= '</li>';
                     
                 }
