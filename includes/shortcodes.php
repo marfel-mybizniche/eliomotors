@@ -45,7 +45,7 @@ function find_us_gmap() {
             //$postvar .=" var loc_id = " .get_the_ID(). ";";
             $postvar .=" var office_lat = " .get_field('map_location')['lat'].";";
             $postvar .=" var office_lng = " .get_field('map_location')['lng'].";";
-            $postvar .=" loc_content = '<div class=mapinfo id=mapInfo>';";
+            $postvar .=" loc_content = '<div class=mapinfo id=mapInfo'+loc_ctr+'>';";
             $postvar .=" loc_content += '' +loc_title+ '';";
             $postvar .=" loc_content += '</div>';";
             $postvar .=" array_holder = [loc_title, office_lat, office_lng, loc_content];
@@ -109,11 +109,11 @@ function find_us_gmap() {
                 while ( $locations->have_posts() ) { 
                     $locations->the_post();
                     $postvar   .= '<li class="city_item">';
-                    //$postvar   .= ''.get_the_title().'';
-                    $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
+                    $postvar   .= ''.get_the_title().'';
+                   // $postvar   .= '<a href="#gmap" class="triggerMap triggerMap'.$locCtr.'" data-smooth-scroll="">'.get_the_title().'</a>';
                     $postvar   .= '</li>';
                     
-                } wp_reset_postdata();
+                }
                 $postvar   .= '</ul>';
                 $postvar   .= '</li>';
                 $locCtr++; 
@@ -121,7 +121,7 @@ function find_us_gmap() {
 
    
     $postvar   .= '</ul>';
-
+    
     $postvar   .= '<div style="display:none">';
         while ( $locations->have_posts() ) : $locations->the_post();  
             if(!empty(get_field('map_location'))): 
@@ -129,7 +129,8 @@ function find_us_gmap() {
             endif;   
         endwhile; 
         wp_reset_postdata();
-    $postvar   .= '</div>';    
+    $postvar   .= '</div>'; 
+
     return $postvar;
     }
 add_shortcode('display_locations_gmap', 'find_us_gmap');
