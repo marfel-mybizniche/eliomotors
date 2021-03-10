@@ -154,6 +154,21 @@ function mbn_myme_types($mime_types){
 }
 add_filter('upload_mimes', 'mbn_myme_types');
 
+// Post Reading Time
+function reading_time() {
+    $content = get_post_field( 'post_content', $post->ID );
+    $word_count = str_word_count( strip_tags( $content ) );
+    $readingtime = ceil($word_count / 200);
+    
+    if ($readingtime == 1) {
+        $timer = " minute";
+    } else {
+        $timer = " minutes";
+    }
+    $totalreadingtime = $readingtime . $timer;
+    
+    return $totalreadingtime;
+}
 
 require MBN_DIR_PATH.'/includes/post-types.php';
 require MBN_DIR_PATH.'/includes/shortcodes.php';

@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div class="sec_banner">
+<div class="sec_banner test">
     <div class="grid-container">
         <hgroup>
             <h5>Media</h5>
@@ -44,8 +44,6 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x post_lists">
             <?php 
-            $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-            query_posts( array('post__not_in' => get_option("sticky_posts"), 'paged' => $paged) );
                 while ( have_posts() ) : the_post(); ?>
                 <div class="cell large-4 medium-6 small-12 post_item">
                     <div class="post_box">
@@ -76,10 +74,7 @@
                 </div>
             <?php endwhile; wp_reset_query();  ?>
         </div>
-        
-        <div class="pagination">
-            <?php the_posts_pagination(); ?> 
-        </div>
+        <?php the_posts_pagination(); ?> 
         
     </div>     
 </div>
