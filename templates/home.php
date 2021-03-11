@@ -113,7 +113,7 @@ get_header(); ?>
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell medium-10 large-10 xlarge-10">
-                    <ul class="review_slider" data-aos="fade-up" data-aos-offset="300">
+                    <ul class="review_slider" data-aos="fade-up" >
 
                     <?php                 
                         $tisteArgs = array(

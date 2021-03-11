@@ -179,122 +179,148 @@ blockquote {
     border-left-width: 0;
     border-color: $color-primary;
     color: $color-dark;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 300;
     font-style: italic;
     line-height: 1.2;
-    margin: 0 0 20px;
-    padding: 50px 0 0 180px;
+    margin: 30px 0 70px;
+    padding: 20px 0 0 50px;
     position: relative;
 
     &:before {
         content: "";
-        width: 95px;
-        height: 105px;
+        width: 80px;
+        height: 80px;
         position: absolute;
-        left: 20px;
+        left: -40px;
         top:0;
-        background: $color-primary url(../img/icon/quote.svg) no-repeat center;
-        transform: skewX(-15deg);
+        background: url(../img/icon/quote2.svg) no-repeat center;
     }
-
 
     p {
-        color: $color-dark;
-        margin-bottom: 30px;
         line-height: 1.2;
+        color: $color-primary;
     }
 
-    cite {
-        line-height: 1;
-        text-align: left;
-        font: 600 24px  $font-rajdhani;
-        font-style: normal;
-        color: $color-dark;
-        text-transform: uppercase;
-
-        &:before {
-            display: none;
-        }
-
-        small, s {
-            font: 300 16px  $body-font-family;
-            display: block;
-            color: $color-lgrey;
-            text-transform: none;
-            text-decoration: none;
-        }
-
-    }
-
-    &.small {
-        font-size: 20px;
-        padding: 20px 0 0 120px;
+    &.quote {
+        padding: 50px 0 0 180px;
+        font-size: 48px;
 
         &:before {
             content: "";
-            width: 65px;
-            height: 75px;
-            background-size: 32px;
+            width: 95px;
+            height: 105px;
+            position: absolute;
+            left: 20px;
+            top:0;
+            background: $color-primary url(../img/icon/quote.svg) no-repeat center;
+            transform: skewX(-15deg);
         }
+
 
         p {
-            line-height: 1.4;
+            color: $color-dark;
+            margin-bottom: 30px;
+            line-height: 1.2;
         }
-    }
 
-    &.large {
-        font-size: 64px;
+        cite {
+            line-height: 1;
+            text-align: left;
+            font: 600 24px  $font-rajdhani;
+            font-style: normal;
+            color: $color-dark;
+            text-transform: uppercase;
 
-        &:before {
-            content: "";
-            width: 115px;
-            height: 125px;
+            &:before {
+                display: none;
+            }
+
+            small, s {
+                font: 300 16px  $body-font-family;
+                display: block;
+                color: $color-lgrey;
+                text-transform: none;
+                text-decoration: none;
+            }
+
+        }
+
+        &.small {
+            font-size: 20px;
+            padding: 20px 0 0 120px;
+
+            &:before {
+                content: "";
+                width: 65px;
+                height: 75px;
+                background-size: 32px;
+            }
+
+            p {
+                line-height: 1.4;
+            }
+        }
+
+        &.large {
+            font-size: 64px;
+
+            &:before {
+                content: "";
+                width: 115px;
+                height: 125px;
+            }
         }
     }
 
     @media (max-width: 1366px) {
-        font-size: 32px;
+        &.quote {
+            font-size: 32px;
 
-        &.large {
-            font-size: 46px;
+            &.large {
+                font-size: 46px;
+            }
         }
     }
 
     @media (max-width: 1023px) {
-        padding: 90px 0 0;
-        font-size: 28px;
-
-        &:before {
-            content: "";
-            width: 65px !important;
-            height: 70px !important;
-            background-size: 38px;
-        }
-
-        &.small {
-            padding-left: 90px;
+        &.quote {
+            padding: 90px 0 0;
+            font-size: 28px;
 
             &:before {
-                left: 0;
+                content: "";
+                width: 65px !important;
+                height: 70px !important;
+                background-size: 38px;
             }
-        }
-        
-        &.large {
-            font-size: 42px;
+
+            &.small {
+                padding-left: 90px;
+
+                &:before {
+                    left: 0;
+                }
+            }
+            
+            &.large {
+                font-size: 42px;
+            }
         }
     }
 
     @media (max-width: 767px) {
-        font-size: 22px;
-        padding: 85px 0 0 !important;
-        
-        &.small {
-            font-size: 18px;
-        }
+        &.quote {
+            font-size: 22px;
+            padding: 85px 0 0 !important;
+            
+            &.small {
+                font-size: 18px;
+            }
 
-        &.large {
-            font-size: 32px;
+            &.large {
+                font-size: 32px;
+            }
         }
     }
 }

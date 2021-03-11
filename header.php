@@ -25,7 +25,7 @@
             <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
 
             <div class="navutil show-for-large">
-                <a class="button hollow" href="#"><i class="icon icn_bell"></i> Send Me updates</a>
+                <a class="button hollow popup_btn" href="#send-me-updates"><i class="icon icn_bell"></i> Send Me updates</a>
                 <span id="search" class="search" data-toggler=".active">
                     <span class="btn"  data-toggle="search">search icon</span>    
                     <form action="/" method="get">

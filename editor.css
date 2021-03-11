@@ -84,6 +84,13 @@ h6 {
   font-family: "Rajdhani", sans-serif;
 }
 
+.post-type-post .editor-styles-wrapper h5 {
+  font-family: "Rajdhani", sans-serif;
+  color: #929292;
+  font-style: normal;
+  font-size: 20px;
+}
+
 .text-center, .sec_banner {
   text-align: center;
 }

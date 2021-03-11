@@ -57,6 +57,16 @@
 
 	</div>
 </footer>
+
+
+<div class="popup_wrap" id="send-me-updates">
+	<div class="popup_box">
+		<h6>Send Me Updates</h6>
+		<?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
+		<span class="pop_close"></span>
+	</div>
+</div>
+
 </div>  
 
 <?php wp_footer() ?>
