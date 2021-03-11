@@ -37,7 +37,7 @@ get_header(); ?>
                     </ul>
                     <div class="note show-for-medium">+ Average commuter drives 52 miles/day.</div>
                     <div class="action">
-                        <a href="#" class="button hollow large">
+                        <a href="#send-me-updates" class="button hollow large popup_btn">
                             <i class="icon icn_bell"></i> Send Me updates
                         </a>
                         <span class="price show-for-medium">
