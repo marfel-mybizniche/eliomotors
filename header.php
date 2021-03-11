@@ -59,7 +59,7 @@
                 </ul>
 
                 <div class="mobfoot">
-                    <a href="#" class="button hollow expanded large"><i class="icon icn_bell"></i> Send Me updates</a> 
+                    <a href="#send-me-updates" class="button hollow expanded large popup_btn"><i class="icon icn_bell"></i> Send Me updates</a> 
                     <p>&copy;  <?php echo date('Y'); ?> Elio Motors Inc. All rights reserved. No portion of this site may be reproduced or duplicated without the express permission of Elio Motors Inc.</p>
                 </div>
             </nav>
