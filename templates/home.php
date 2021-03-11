@@ -226,7 +226,7 @@ get_header(); ?>
                 </div>
                 <div class="cell large-6">
                     <h6 class="sq-title">Say goodbye to ordinary and say hello to Elio.</h6>
-                    <a href="#" class="button primary xlarge skew"><i class="icon white large icn_bell"></i> Get Updates Now</a>
+                    <a href="#send-me-updates" class="button primary xlarge skew popup_btn"><i class="icon white large icn_bell"></i> Get Updates Now</a>
                 </div>
             </div>
         </div>
