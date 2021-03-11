@@ -284,6 +284,15 @@ blockquote {
     }
 
     @media (max-width: 1023px) {
+
+        font-size: 24px;
+        margin-bottom: 40px;
+        
+        &:before {
+            left: -25px;
+            background-size: 50px;
+        }
+
         &.quote {
             padding: 90px 0 0;
             font-size: 28px;
