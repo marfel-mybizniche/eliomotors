@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<div class="sec_banner">
+<div class="sec_banner test">
     <div class="grid-container">
         <hgroup>
             <h5>Media</h5>
@@ -13,7 +13,9 @@
 </div>
 
 
-<?php if(!is_home()) {  
+<?php
+$category = get_queried_object();
+ if(!is_home() and $category->term_id != 1) {  
     query_posts( array('post__in' => get_option( 'sticky_posts' ), 'ignore_sticky_posts' => 1) );
     while ( have_posts() ) : the_post(); ?>
     <div class="sec_feat_post">
@@ -44,8 +46,6 @@
     <div class="grid-container">
         <div class="grid-x grid-margin-x post_lists">
             <?php 
-            $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-            query_posts( array('post__not_in' => get_option("sticky_posts"), 'paged' => $paged) );
                 while ( have_posts() ) : the_post(); ?>
                 <div class="cell large-4 medium-6 small-12 post_item">
                     <div class="post_box">
@@ -71,15 +71,13 @@
                             </h6>
                             <h4><a href="<?= get_the_permalink(); ?>"><?php the_title(); ?></a></h4>
                             <?php the_excerpt(); ?>
+                            <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
                         </article>
                     </div>
                 </div>
             <?php endwhile; wp_reset_query();  ?>
         </div>
-        
-        <div class="pagination">
-            <?php the_posts_pagination(); ?> 
-        </div>
+        <?php the_posts_pagination(array('show_all' => true, 'prev_next' => true)); ?> 
         
     </div>     
 </div>
