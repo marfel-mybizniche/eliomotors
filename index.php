@@ -47,7 +47,7 @@ $category = get_queried_object();
         <div class="grid-x grid-margin-x post_lists">
             <?php 
                 while ( have_posts() ) : the_post(); ?>
-                <div class="cell large-4 medium-6 small-12 post_item">
+                <div class="cell large-4 small-12 post_item">
                     <div class="post_box">
                         <figure>
                             <?php 

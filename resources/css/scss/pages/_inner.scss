@@ -743,6 +743,14 @@
             }
         }
     }
+
+    @media (max-width:480px) {
+        .post_box {
+            figure {
+                height: 280px;
+            }
+        }
+    }
 }
 
 .sec_post_desc {
@@ -947,6 +955,17 @@
             
         }
     }
+    @media(max-width: 639px) {
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+    }
 
 }
 
@@ -1040,6 +1059,14 @@
         .post_box {
             article {
                 padding: 20px;
+            }
+        }
+    }
+
+    @media (max-width:480px) {
+        .post_box {
+            figure {
+                height: 280px;
             }
         }
     }
