@@ -941,6 +941,8 @@
     }
 
     @media(max-width:1023px) {
+        padding-top: 100px;
+
         .post_body {
 
             figure {
@@ -956,6 +958,8 @@
         }
     }
     @media(max-width: 639px) {
+        padding-top: 80px;
+        
         h1 {
             font-size: 40px;
         }
