@@ -73,6 +73,8 @@ function mbn_enqueue_scripts(){
 
     wp_enqueue_style('font-ubuntu', 'https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap', [], $wp_version);
     wp_enqueue_style('chantal-rajdhani', 'https://use.typekit.net/het5epm.css', [], $wp_version);
+    wp_enqueue_style('font-pacifico', 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap', [], $wp_version);
+    
 
 	//Global JS
 	wp_deregister_script( 'jquery' );
@@ -153,6 +155,7 @@ function mbn_myme_types($mime_types){
     return $mime_types;
 }
 add_filter('upload_mimes', 'mbn_myme_types');
+
 
 // Post Reading Time
 function reading_time() {

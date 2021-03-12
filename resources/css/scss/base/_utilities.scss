@@ -205,3 +205,35 @@ hr {
 	}
 }
 
+.hline {
+	position:relative;
+	white-space:nowrap;
+	overflow:hidden;
+	margin:0 -10px 20px;
+	display:flex;
+	line-height:1.5;
+	align-items:center;
+	text-transform:uppercase;
+
+	&:before, &:after{
+		content:"";
+		height:2px;
+		width:100%;
+		margin:0 10px;
+		border-top:1px solid darken($color-white, 20%);
+		opacity:1;
+		width:100%;
+	}
+	&:before {
+		width: 0;
+		margin-left: 0;
+	}
+
+	&.text-center,
+	&.has-text-align-center {
+		&:before, &:after {
+			width: 100%;
+			margin-left: 10px;
+		}
+	}
+}

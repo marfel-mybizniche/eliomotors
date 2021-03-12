@@ -113,11 +113,15 @@ img{
 p{
     line-height: 1.6;
     margin-bottom: 20px; 
+
     &.large {
         font-size: 20px;
     }
     &.small {
         font-size: 14px;
+    }
+    &.xlarge {
+        font-size: 24px;
     }
 
     @media (max-width: 767px) {   
@@ -126,6 +130,9 @@ p{
         }
         &.small {
             font-size: 14px;
+        }
+        &.xlarge {
+            font-size: 20px;
         }
     }
 }
