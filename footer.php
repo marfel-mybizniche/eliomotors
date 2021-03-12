@@ -58,10 +58,15 @@
 	</div>
 </footer>
 
-
-<div class="popup_wrap" id="send-me-updates">
-	<div class="popup_box">
-		<h6>Send Me Updates</h6>
+<div class="popup_wrap newsletter_popup" id="send-me-updates">
+	<div class="popup_box ">		
+		<h2><em>WANT AN ELIO?</em></h2>
+		<h4 class="tt-uppercase"><em>Get <span class="text-primary">Elio Insider Updates</span> including:</em></h4>
+		<ul class="check-list inline primary">
+			<li>Exclusive videos</li>
+			<li>Events</li>
+			<li>Details about Elio EV</li>
+		</ul>	
 		<?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
 		<span class="pop_close"></span>
 	</div>

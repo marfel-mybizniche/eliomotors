@@ -100,7 +100,7 @@
 		<div class="grid-x grid-margin-x related_lists">
             <?php while ( $relPosts->have_posts() ) { $relPosts->the_post(); ?>
 
-                <div class="cell large-4 medium-6 small-12 post_item">
+                <div class="cell large-4 small-12 post_item">
                     <div class="post_box">
                         <figure>
                             <?php 

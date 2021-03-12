@@ -330,9 +330,11 @@ ul.check-list, ul.check_list {
 	}
 
 	&.inline {
+		margin-right: -30px;
 
 		li {
 			display: inline-block;
+			margin-right: 30px;
 		}
 	}
 
