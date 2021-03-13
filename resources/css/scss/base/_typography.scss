@@ -58,6 +58,10 @@ h5{
     font-family: $font-chantal;
     font-style: italic;
     color: $color-primary;
+
+    &.small {
+        font-size: 32px;
+    }
 }
 h6{
     font-size:18px;

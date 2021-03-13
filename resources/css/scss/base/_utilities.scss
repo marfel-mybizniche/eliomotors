@@ -83,6 +83,10 @@
     margin-right: auto;
 }
 
+.cell {
+    flex-basis: auto !important;
+} 
+
 @include media(min-width, 1600px) {
     .grid-x { 
         > .xlarge-3 {
@@ -237,3 +241,4 @@ hr {
 		}
 	}
 }
+
