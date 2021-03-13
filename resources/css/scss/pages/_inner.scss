@@ -437,6 +437,23 @@
     h6 {
         font-weight: 600;
     }
+
+    .facility_img {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width:639px) {
+        .facility_img {
+            height: 290px;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 
