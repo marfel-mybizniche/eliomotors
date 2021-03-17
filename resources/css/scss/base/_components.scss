@@ -355,8 +355,9 @@ ul.check-list, ul.check_list {
 
 	li {
 		list-style: none;
-		padding: 5px 0 5px 25px;
+		padding: 6px 0 6px 25px;
 		position: relative;
+		margin-bottom: 5px;
  
 		&:before {
 			content: "";
@@ -365,7 +366,7 @@ ul.check-list, ul.check_list {
 			width: 8px;
 			height: 10px;
 			left: 0;
-			top: 13px;
+			top: 8px;
 			transform: skewX(-15deg);
 		}
 	}

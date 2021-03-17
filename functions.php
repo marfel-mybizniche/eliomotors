@@ -59,9 +59,6 @@ function mbn_enqueue_scripts(){
     global $wp_version;
     global $template;
 
-    // Global CSS
-    wp_enqueue_style('mbn-style', get_stylesheet_uri());
-
     // unneccessary scripts
     wp_deregister_script('wp-embed');
     wp_deregister_style('wp-block-library');
@@ -108,6 +105,10 @@ function mbn_enqueue_scripts(){
     // App
     wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], $wp_version);
     wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], $wp_version, true);
+
+    
+    // Custom CSS
+    wp_enqueue_style('mbn-style', get_stylesheet_uri());
     
 
     // localize objects
