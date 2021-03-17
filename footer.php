@@ -37,10 +37,12 @@
 					<div class="foot_logo">
 						<img src="<?php echo MBN_ASSETS_URI; ?>/img/logo.png" alt="">
 					</div>
+					<?php /*
 					<div class="foot_btns button-group">
 						<a class="button primary" href="#">Contact Us</a>
 						<a class="button hollow login" href="#">Login</a>
 					</div>
+					*/ ?>
 					<ul class="foot_social">
 						<li><a href="https://www.facebook.com/ElioMotors" target="_blank">
 							<img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/facebook.svg" alt=""></a></li>

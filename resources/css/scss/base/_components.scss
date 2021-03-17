@@ -349,12 +349,15 @@ ul.check-list, ul.check_list {
 .square_list {
 	margin: 0 0 30px;
 	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: $font-rajdhani;
 
 	li {
 		list-style: none;
 		padding: 5px 0 5px 25px;
 		position: relative;
-
+ 
 		&:before {
 			content: "";
 			background: $color-primary;
@@ -370,7 +373,7 @@ ul.check-list, ul.check_list {
 	&.inline {
 
 		li {
-			display: inline-block;
+			display: inline-block; 
 		}
 	}
 }
