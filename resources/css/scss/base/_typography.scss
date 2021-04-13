@@ -7,12 +7,19 @@
 
 :focus {outline:0 !important;}
 
+html {
+  height: -webkit-fill-available;
+}
+
 body{
     font-family: $body-font-family;
     font-size: $body-font-size;
     color: $color-dark;
     font-weight: 300;
     overflow-x: hidden;
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 
     &.popup-active {
        overflow: hidden;
