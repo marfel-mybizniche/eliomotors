@@ -47,7 +47,6 @@
             </nav>
 
             <nav class="mobmenu hide-for-large">
-                <ul>
                 <?php
                     wp_nav_menu( array( 
                         'theme_location' => 'main-menu',
@@ -56,7 +55,6 @@
                         'items_wrap' => '<ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">%3$s</ul>' 
                     ));
                 ?>
-                </ul>
 
                 <div class="mobfoot">
                     <a href="#send-me-updates" class="button hollow expanded large popup_btn"><i class="icon icn_bell"></i> Send Me updates</a> 
