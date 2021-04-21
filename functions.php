@@ -107,7 +107,7 @@ function mbn_enqueue_scripts(){
     wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], $wp_version, true);
 
     
-    // Custom CSS
+    // Custom CSS (without scss)
     wp_enqueue_style('mbn-style', get_stylesheet_uri());
     
 
