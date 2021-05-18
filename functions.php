@@ -5,7 +5,7 @@ include_once("mbn-login/setup.php");
 
 define('MBN_DIR_URI', get_template_directory_uri());
 define('MBN_DIR_PATH', get_template_directory());
-define('MBN_ASSETS_URI', MBN_DIR_URI.'/resources');
+define('MBN_ASSETS_URI', MBN_DIR_URI.'/assets');
 define('MBN_MAP_API_KEY',"AIzaSyDac2mOtJr_IktjUhiLZYRL_xHzxRbodRE");
 
 /**
@@ -105,7 +105,7 @@ function mbn_enqueue_scripts(){
     
     // Custom CSS (without scss)
     wp_enqueue_style('mbn-style', get_stylesheet_uri());
-    
+
     wp_enqueue_style('chantal-rajdhani', 'https://use.typekit.net/het5epm.css', [], $wp_version);
     wp_enqueue_style('font-pacifico', 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap', [], $wp_version);
     wp_enqueue_style('font-ubuntu', 'https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap', [], $wp_version);
