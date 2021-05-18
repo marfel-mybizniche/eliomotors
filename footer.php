@@ -19,7 +19,9 @@
 				<div class="cell large-6 large-order-1 small-order-1">
 					<div class="foot_note">
 						<p>*MSRP excludes destination/delivery charges, taxes, title, registration, and options/installation.</p>
-						<p>Anticipated production date is based upon timely receipt of requisite funding.</p><br>
+						<p>Anticipated production date is based upon timely receipt of requisite funding.</p>
+						<p>Vehicle shown is the gas powered version.</p>
+						<br>
 						<h5>Forward-Looking Statements</h5>
 						<p>Certain statements within this website including, but not limited to, statements related to anticipated commencement of commercial production, targeted pricing and performance goals, and statements that otherwise relate to future periods are forward-looking statements. These statements involve risks and uncertainties, which are described in more detail in the Company’s periodic reports filed with the Securities and Exchange Commission, specifically the most recent reports which identify important risk factors that could cause actual results to differ from those contained in the forward-looking statements. Forward-looking statements are made and based on information available to the Company on the date of this website. Elio Motors assumes no obligation to update the information within this website.</p>
 					</div>

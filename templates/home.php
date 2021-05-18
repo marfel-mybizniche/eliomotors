@@ -145,7 +145,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sec_featured_in" data-aos="fade-up" data-aos-offset="300">
+    <section class="sec_featured_in" data-aos="fade-up" data-aos-offset="100">
         <div class="grid-container">
             <h6>Featured in</h6>
             <ul class="feat_logos">
@@ -167,14 +167,14 @@ get_header(); ?>
         <div class="grid-container">
             
             <?php /*
-            <div class="preview" data-aos="zoom-in-up" data-aos-offset="300">
+            <div class="preview" data-aos="zoom-in-up" data-aos-offset="100">
                 <a class="btn-play" href="<?php echo MBN_ASSETS_URI; ?>/video/Elio-Hero.mp4" data-fancybox><img src="<?php echo MBN_ASSETS_URI; ?>/img/featured-video.jpg" alt=""></a>
             </div>
             */ ?>                   
             <div class="grid-x grid-margin-x">
                 <div class="cell large-6 copy">
                     <ul class="list">
-                        <li class="icon_left large" data-aos="fade-right" data-aos-offset="300">
+                        <li class="icon_left large" data-aos="fade-right" data-aos-offset="100">
                             <i class="icon"><img src="<?php echo MBN_ASSETS_URI; ?>/img/icon/safety-system-management.svg" alt=""></i>
                             <span>Elio’s unique Safety Management System</span> combines 3 airbags, a unibody frame, anti-lock braking, electronic stability control and 50% larger impact zones than the vehicle you drive now
                         </li>
@@ -205,7 +205,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sec_newsletter" data-aos="fade-up" data-aos-offset="300">
+    <section class="sec_newsletter" data-aos="fade-up" data-aos-offset="100">
         <div class="bg">
             <!-- <img src="<?php echo MBN_ASSETS_URI; ?>/img/img-video-placeholder.jpg" alt=""> -->
             <video poster="<?php echo MBN_ASSETS_URI; ?>/img/img-video-placeholder.jpg" autoplay loop muted playsinline>
@@ -227,6 +227,7 @@ get_header(); ?>
                 <div class="cell large-6">
                     <h6 class="sq-title">Say goodbye to ordinary and say hello to Elio.</h6>
                     <a href="#send-me-updates" class="button primary xlarge skew popup_btn"><i class="icon white large icn_bell"></i> Get Updates Now</a>
+                    <p><em>Vehicle shown is the gas powered version.</em></p>
                 </div>
             </div>
         </div>
